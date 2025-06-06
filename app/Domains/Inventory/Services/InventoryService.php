@@ -21,6 +21,7 @@ use App\Models\Inventory;
 use App\Models\InventoryUnit;
 use Illuminate\Foundation\Auth\User;
 use Illuminate\Support\Collection;
+use Illuminate\Support\Facades\DB;
 
 class InventoryService
 {
@@ -95,115 +96,117 @@ class InventoryService
 
     public function mergeInventory(int $oldProductId, int $newProductId): void
     {
-        $inventoryQueries = resolve(InventoryQueries::class);
-        $inventoryUnitQueries = resolve(InventoryUnitQueries::class);
-        $inventoryUpdateQueries = resolve(InventoryUpdateQueries::class);
-        $reservedStockQueries = resolve(ReservedStockQueries::class);
-        $transitStockQueries = resolve(TransitStockQueries::class);
-        $saleItemUnitQueries = resolve(SaleItemUnitQueries::class);
-        $orderItemUnitQueries = resolve(OrderItemUnitQueries::class);
-        $stockTransferItemUnitQueries = resolve(StockTransferItemUnitQueries::class);
-        $purchaseOrderFulfillmentItemUnitQueries = resolve(PurchaseOrderFulfillmentItemUnitQueries::class);
+        DB::transaction(function () use ($oldProductId, $newProductId): void {
+            $inventoryQueries = resolve(InventoryQueries::class);
+            $inventoryUnitQueries = resolve(InventoryUnitQueries::class);
+            $inventoryUpdateQueries = resolve(InventoryUpdateQueries::class);
+            $reservedStockQueries = resolve(ReservedStockQueries::class);
+            $transitStockQueries = resolve(TransitStockQueries::class);
+            $saleItemUnitQueries = resolve(SaleItemUnitQueries::class);
+            $orderItemUnitQueries = resolve(OrderItemUnitQueries::class);
+            $stockTransferItemUnitQueries = resolve(StockTransferItemUnitQueries::class);
+            $purchaseOrderFulfillmentItemUnitQueries = resolve(PurchaseOrderFulfillmentItemUnitQueries::class);
 
-        $inventoryOfOldProducts = $inventoryQueries->getByProductId($oldProductId);
-        $inventoryOfNewProducts = $inventoryQueries->getByProductId($newProductId);
+            $inventoryOfOldProducts = $inventoryQueries->getByProductId($oldProductId);
+            $inventoryOfNewProducts = $inventoryQueries->getByProductId($newProductId);
 
-        foreach ($inventoryOfOldProducts as $inventoryOfOldProduct) {
-            $inventoryOfNewProduct = $inventoryOfNewProducts->where(
-                'location_id',
-                $inventoryOfOldProduct->location_id
-            )
-                ->first();
+            foreach ($inventoryOfOldProducts as $inventoryOfOldProduct) {
+                $inventoryOfNewProduct = $inventoryOfNewProducts->where(
+                    'location_id',
+                    $inventoryOfOldProduct->location_id
+                )
+                    ->first();
 
-            if ($inventoryOfNewProduct instanceof Inventory) {
+                if ($inventoryOfNewProduct instanceof Inventory) {
+                    $stock = (float) $inventoryOfOldProduct->stock;
+                    $reservedStock = (float) $inventoryOfOldProduct->reserved_stock;
+
+                    foreach ($inventoryOfOldProduct->inventoryUnits as $oldInventoryInventoryUnit) {
+                        $inventoryUnitQueries->updateInventoryId(
+                            $oldInventoryInventoryUnit,
+                            $inventoryOfNewProduct->id
+                        );
+                    }
+
+                    foreach ($inventoryOfOldProduct->reservedStocksWithDeleted as $oldInventoryReservedStock) {
+                        $reservedStockQueries->updateInventoryId(
+                            $oldInventoryReservedStock,
+                            $inventoryOfNewProduct->id
+                        );
+                    }
+
+                    foreach ($inventoryOfOldProduct->transitStocksWithDeleted as $oldInventoryTransitStock) {
+                        $transitStockQueries->updateInventoryIdDuringProductMerge(
+                            $oldInventoryTransitStock,
+                            $inventoryOfNewProduct->id
+                        );
+                    }
+
+                    foreach ($inventoryOfOldProduct->saleItemUnits as $oldInventorySaleItemUnit) {
+                        $saleItemUnitQueries->updateInventoryId($oldInventorySaleItemUnit, $inventoryOfNewProduct->id);
+                    }
+
+                    foreach ($inventoryOfOldProduct->orderItemUnits as $oldInventoryOrderItemUnit) {
+                        $orderItemUnitQueries->updateInventoryId($oldInventoryOrderItemUnit, $inventoryOfNewProduct->id);
+                    }
+
+                    foreach ($inventoryOfOldProduct->purchaseOrderFulfillmentItemUnits as $purchaseOrderFulfillmentItemUnit) {
+                        $purchaseOrderFulfillmentItemUnitQueries->updateInventoryId(
+                            $purchaseOrderFulfillmentItemUnit,
+                            $inventoryOfNewProduct->id
+                        );
+                    }
+
+                    foreach ($inventoryOfOldProduct->stockTransferItemUnitsWithDeleted as $oldInventoryStockTransferItemUnit) {
+                        $stockTransferItemUnitQueries->updateInventoryId(
+                            $oldInventoryStockTransferItemUnit,
+                            $inventoryOfNewProduct->id
+                        );
+                    }
+
+                    $inventoryQueries->increaseStockAndReservedStockAndDeleteOldInventoryData(
+                        $inventoryOfNewProduct,
+                        $inventoryOfOldProduct,
+                        $stock,
+                        $reservedStock
+                    );
+
+                    $inventoryUpdateQueries->getByProductIdAndLocationAndUpdateWithNewProductId(
+                        $oldProductId,
+                        $newProductId,
+                        'This entry is of product merge from product id: ' . $oldProductId . 'to product id ' . $newProductId,
+                    );
+
+                    continue;
+                }
+
+                $inventoryQueries->updateProductId($inventoryOfOldProduct, $newProductId);
                 $stock = (float) $inventoryOfOldProduct->stock;
-                $reservedStock = (float) $inventoryOfOldProduct->reserved_stock;
-
-                foreach ($inventoryOfOldProduct->inventoryUnits as $oldInventoryInventoryUnit) {
-                    $inventoryUnitQueries->updateInventoryId(
-                        $oldInventoryInventoryUnit,
-                        $inventoryOfNewProduct->id
-                    );
-                }
-
-                foreach ($inventoryOfOldProduct->reservedStocksWithDeleted as $oldInventoryReservedStock) {
-                    $reservedStockQueries->updateInventoryId(
-                        $oldInventoryReservedStock,
-                        $inventoryOfNewProduct->id
-                    );
-                }
-
-                foreach ($inventoryOfOldProduct->transitStocksWithDeleted as $oldInventoryTransitStock) {
-                    $transitStockQueries->updateInventoryIdDuringProductMerge(
-                        $oldInventoryTransitStock,
-                        $inventoryOfNewProduct->id
-                    );
-                }
-
-                foreach ($inventoryOfOldProduct->saleItemUnits as $oldInventorySaleItemUnit) {
-                    $saleItemUnitQueries->updateInventoryId($oldInventorySaleItemUnit, $inventoryOfNewProduct->id);
-                }
-
-                foreach ($inventoryOfOldProduct->orderItemUnits as $oldInventoryOrderItemUnit) {
-                    $orderItemUnitQueries->updateInventoryId($oldInventoryOrderItemUnit, $inventoryOfNewProduct->id);
-                }
-
-                foreach ($inventoryOfOldProduct->purchaseOrderFulfillmentItemUnits as $purchaseOrderFulfillmentItemUnit) {
-                    $purchaseOrderFulfillmentItemUnitQueries->updateInventoryId(
-                        $purchaseOrderFulfillmentItemUnit,
-                        $inventoryOfNewProduct->id
-                    );
-                }
-
-                foreach ($inventoryOfOldProduct->stockTransferItemUnitsWithDeleted as $oldInventoryStockTransferItemUnit) {
-                    $stockTransferItemUnitQueries->updateInventoryId(
-                        $oldInventoryStockTransferItemUnit,
-                        $inventoryOfNewProduct->id
-                    );
-                }
-
-                $inventoryQueries->increaseStockAndReservedStockAndDeleteOldInventoryData(
-                    $inventoryOfNewProduct,
-                    $inventoryOfOldProduct,
-                    $stock,
-                    $reservedStock
-                );
 
                 $inventoryUpdateQueries->getByProductIdAndLocationAndUpdateWithNewProductId(
                     $oldProductId,
                     $newProductId,
                     'This entry is of product merge from product id: ' . $oldProductId . 'to product id ' . $newProductId,
                 );
-
-                continue;
             }
 
-            $inventoryQueries->updateProductId($inventoryOfOldProduct, $newProductId);
-            $stock = (float) $inventoryOfOldProduct->stock;
+            $inventories = $inventoryQueries->getInventoriesByProductId($newProductId);
 
-            $inventoryUpdateQueries->getByProductIdAndLocationAndUpdateWithNewProductId(
-                $oldProductId,
-                $newProductId,
-                'This entry is of product merge from product id: ' . $oldProductId . 'to product id ' . $newProductId,
-            );
-        }
+            foreach ($inventories as $inventory) {
+                $inventoryUpdates = $inventoryUpdateQueries->getInventoryUpdatesByProductIdAndLocation(
+                    $inventory->product_id,
+                    $inventory->location_id,
+                );
 
-        $inventories = $inventoryQueries->getInventoriesByProductId($newProductId);
+                $closingStock = 0;
+                foreach ($inventoryUpdates as $inventoryUpdate) {
+                    $closingStock += $inventoryUpdate->quantity;
+                    $inventoryUpdateQueries->updateClosingStock($inventoryUpdate, (float) $closingStock);
+                }
 
-        foreach ($inventories as $inventory) {
-            $inventoryUpdates = $inventoryUpdateQueries->getInventoryUpdatesByProductIdAndLocation(
-                $inventory->product_id,
-                $inventory->location_id,
-            );
-
-            $closingStock = 0;
-            foreach ($inventoryUpdates as $inventoryUpdate) {
-                $closingStock += $inventoryUpdate->quantity;
-                $inventoryUpdateQueries->updateClosingStock($inventoryUpdate, (float) $closingStock);
+                $inventoryQueries->updateStock($inventory, (float) $closingStock - $inventory->reserved_stock);
             }
-
-            $inventoryQueries->updateStock($inventory, (float) $closingStock - $inventory->reserved_stock);
-        }
+        });
     }
 
     public function getLocation(

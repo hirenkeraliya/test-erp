@@ -58,32 +58,34 @@ class StockTransferService
         StockTransfer $stockTransfer,
         User $user,
     ): void {
-        $stockTransferInventoryService = resolve(StockTransferInventoryService::class);
-        foreach ($stockTransfer->getItems() as $stockTransferItem) {
-            $product = $products->firstWhere('id', $stockTransferItem->product_id);
-            $inventory = $sourceInventories->firstWhere('product_id', $stockTransferItem->product_id);
-            if ($product instanceof Product && $product->has_batch) {
-                foreach ($stockTransferItem->batches as $stockTransferItemBatch) {
-                    $stockTransferInventoryService->updateInventoryUnits(
-                        $inventory,
-                        $product,
-                        $stockTransfer->source_location_id,
-                        $stockTransferItem,
-                        $user,
-                        (float) $stockTransferItemBatch->quantity,
-                        $stockTransferItemBatch->batch_id
-                    );
+        DB::transaction(function () use ($products, $sourceInventories, $stockTransfer, $user): void {
+            $stockTransferInventoryService = resolve(StockTransferInventoryService::class);
+            foreach ($stockTransfer->getItems() as $stockTransferItem) {
+                $product = $products->firstWhere('id', $stockTransferItem->product_id);
+                $inventory = $sourceInventories->firstWhere('product_id', $stockTransferItem->product_id);
+                if ($product instanceof Product && $product->has_batch) {
+                    foreach ($stockTransferItem->batches as $stockTransferItemBatch) {
+                        $stockTransferInventoryService->updateInventoryUnits(
+                            $inventory,
+                            $product,
+                            $stockTransfer->source_location_id,
+                            $stockTransferItem,
+                            $user,
+                            (float) $stockTransferItemBatch->quantity,
+                            $stockTransferItemBatch->batch_id
+                        );
+                    }
+
+                    continue;
                 }
 
-                continue;
+                $stockTransferInventoryService->removeReservationStock($stockTransferItem, $user);
+                $stockTransferInventoryService->addTransitStock(
+                    $stockTransfer->destination_location_id,
+                    $stockTransferItem
+                );
             }
-
-            $stockTransferInventoryService->removeReservationStock($stockTransferItem, $user);
-            $stockTransferInventoryService->addTransitStock(
-                $stockTransfer->destination_location_id,
-                $stockTransferItem
-            );
-        }
+        });
     }
 
     public function reserveStockTransferItemStocks(
@@ -120,16 +122,18 @@ class StockTransferService
 
     public function closeTransfer(StockTransfer $stockTransfer, User $user, int $companyId, int $oldStatus): void
     {
-        $this->updateDestinationInventory($stockTransfer, $user);
+        DB::transaction(function () use ($stockTransfer, $user, $companyId, $oldStatus): void {
+            $this->updateDestinationInventory($stockTransfer, $user);
 
-        $stockTransferQueries = resolve(StockTransferQueries::class);
-        $stockTransferTransactionQueries = resolve(StockTransferTransactionQueries::class);
+            $stockTransferQueries = resolve(StockTransferQueries::class);
+            $stockTransferTransactionQueries = resolve(StockTransferTransactionQueries::class);
 
-        $this->addNotification($companyId, $stockTransfer, $user, 'source', 'closed');
+            $this->addNotification($companyId, $stockTransfer, $user, 'source', 'closed');
 
-        $closeStatus = StatusTypes::CLOSED->value;
-        $stockTransferQueries->updateStatus($stockTransfer, $closeStatus);
-        $stockTransferTransactionQueries->addNew($stockTransfer->id, $oldStatus, $closeStatus, $user);
+            $closeStatus = StatusTypes::CLOSED->value;
+            $stockTransferQueries->updateStatus($stockTransfer, $closeStatus);
+            $stockTransferTransactionQueries->addNew($stockTransfer->id, $oldStatus, $closeStatus, $user);
+        });
     }
 
     public function updateDiscrepancySourceInventory(

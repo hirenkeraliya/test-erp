@@ -214,10 +214,12 @@ class InventoryQueries
         float $stock,
         float $reservedStock
     ): void {
-        $inventory->increment('stock', $stock);
-        $inventory->increment('reserved_stock', $reservedStock);
+        DB::transaction(function () use ($inventory, $oldInventory, $stock, $reservedStock): void {
+            $inventory->increment('stock', $stock);
+            $inventory->increment('reserved_stock', $reservedStock);
 
-        $oldInventory->delete();
+            $oldInventory->delete();
+        });
     }
 
     public function updateProductId(Inventory $oldInventory, int $newProductId): void
