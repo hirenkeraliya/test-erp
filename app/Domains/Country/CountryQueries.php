@@ -29,6 +29,10 @@ class CountryQueries
         /** @var Country $country */
         $country = Country::where('name', $name)->first();
 
+        if (!$country instanceof Country) {
+            throw new \InvalidArgumentException("Country with name '{$name}' not found");
+        }
+
         return $country->id;
     }
 
@@ -39,6 +43,10 @@ class CountryQueries
             ->where('iso2', $code)
             ->orWhere('iso3', $code)
             ->first();
+
+        if (!$country instanceof Country) {
+            throw new \InvalidArgumentException("Country with code '{$code}' not found");
+        }
 
         return $country->id;
     }

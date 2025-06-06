@@ -44,6 +44,10 @@ class CityQueries
         /** @var City $city */
         $city = City::where('name', $name)->first();
 
+        if (!$city instanceof City) {
+            throw new \InvalidArgumentException("City with name '{$name}' not found");
+        }
+
         return $city->id;
     }
 
