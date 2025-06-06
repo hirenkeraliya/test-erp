@@ -42,6 +42,10 @@ class StateQueries
         /** @var State $state */
         $state = State::where('name', $name)->first();
 
+        if (!$state instanceof State) {
+            throw new \InvalidArgumentException("State with name '{$name}' not found");
+        }
+
         return $state->id;
     }
 
