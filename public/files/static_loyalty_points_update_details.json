@@ -1,0 +1,51 @@
+{
+    "total_points": 100,
+    "redeem_points": 0,
+    "available_points": null,
+    "loyalty_points": [
+        {
+            "points": 50,
+            "closing_loyalty_points_balance": 20,
+            "type_id": "USED",
+            "affected_by_type": "MEMBER",
+            "happened_at": "2022-02-26 18:44:57",
+            "type": "REWARDED"
+        },
+        {
+            "points": 50,
+            "closing_loyalty_points_balance": 20,
+            "type_id": "USED",
+            "affected_by_type": "MEMBER",
+            "happened_at": "2022-02-26 18:44:57",
+            "type": "REWARDED"
+        },
+        {
+            "points": 50,
+            "closing_loyalty_points_balance": 20,
+            "type_id": "USED",
+            "affected_by_type": "MEMBER",
+            "happened_at": "2022-02-26 18:44:57",
+            "type": "REWARDED"
+        },
+        {
+            "points": 50,
+            "closing_loyalty_points_balance": 20,
+            "type_id": "USED",
+            "affected_by_type": "MEMBER",
+            "happened_at": "2022-02-26 18:44:57",
+            "type": "REWARDED"
+        },
+        {
+            "points": 50,
+            "closing_loyalty_points_balance": 20,
+            "type_id": "USED",
+            "affected_by_type": "MEMBER",
+            "happened_at": "2022-02-26 18:44:57",
+            "type": "REWARDED"
+        }
+    ],
+    "total_records": 5,
+    "last_page": 1,
+    "current_page": 1,
+    "per_page": 10
+}

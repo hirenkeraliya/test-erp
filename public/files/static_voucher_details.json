@@ -1,0 +1,58 @@
+{
+    "vouchers": [
+        {
+            "id": 1,
+            "discount_type": "PERCENTAGE",
+            "number": "0b1c3cd40",
+            "minimum_spend_amount": "82.43",
+            "percentage": "15.83",
+            "flat_amount": null,
+            "used_at": null,
+            "expiry_date": "2023-06-15"
+        },
+        {
+            "id": 1,
+            "discount_type": "PERCENTAGE",
+            "number": "0b1c3cd40",
+            "minimum_spend_amount": "82.43",
+            "percentage": "15.83",
+            "flat_amount": null,
+            "used_at": null,
+            "expiry_date": "2023-06-15"
+        },
+        {
+            "id": 1,
+            "discount_type": "PERCENTAGE",
+            "number": "0b1c3cd40",
+            "minimum_spend_amount": "82.43",
+            "percentage": "15.83",
+            "flat_amount": null,
+            "used_at": null,
+            "expiry_date": "2023-06-15"
+        },
+        {
+            "id": 1,
+            "discount_type": "PERCENTAGE",
+            "number": "0b1c3cd40",
+            "minimum_spend_amount": "82.43",
+            "percentage": "15.83",
+            "flat_amount": null,
+            "used_at": null,
+            "expiry_date": "2023-06-15"
+        },
+        {
+            "id": 1,
+            "discount_type": "PERCENTAGE",
+            "number": "0b1c3cd40",
+            "minimum_spend_amount": "82.43",
+            "percentage": "15.83",
+            "flat_amount": null,
+            "used_at": null,
+            "expiry_date": "2023-06-15"
+        }
+    ],
+    "total_records": 5,
+    "last_page": 1,
+    "current_page": 1,
+    "per_page": 10
+}

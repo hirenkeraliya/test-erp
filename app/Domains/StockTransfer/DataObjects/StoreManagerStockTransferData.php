@@ -1,0 +1,46 @@
+<?php
+
+declare(strict_types=1);
+
+namespace App\Domains\StockTransfer\DataObjects;
+
+use App\Domains\StockTransfer\Enums\StatusTypes;
+use App\Domains\StockTransfer\Enums\TransferTypeForReport;
+use Illuminate\Validation\Rules\Enum;
+use Spatie\LaravelData\Data;
+
+class StoreManagerStockTransferData extends Data
+{
+    public function __construct(
+        public int $id,
+        public int $page,
+        public int $per_page,
+        public string $start_date,
+        public string $end_date,
+        public ?string $sort_by = null,
+        public ?string $sort_direction = null,
+        public ?int $transfer_type = null,
+        public ?int $status = null,
+        public ?string $search_text = null,
+    ) {
+    }
+
+    /**
+     * @return array<string, mixed>
+     */
+    public static function rules(): array
+    {
+        return [
+            'id' => ['required', 'integer'],
+            'page' => ['required', 'integer'],
+            'per_page' => ['required', 'integer'],
+            'start_date' => ['required', 'date', 'date_format:Y-m-d'],
+            'end_date' => ['required', 'date', 'date_format:Y-m-d', 'after_or_equal:start_date'],
+            'sort_by' => ['sometimes', 'string', 'in:updated_at,reference_number'],
+            'sort_direction' => ['required_with:sort_by', 'string', 'in:asc,desc'],
+            'transfer_type' => ['sometimes', 'integer', new Enum(TransferTypeForReport::class)],
+            'status' => ['sometimes', 'integer', new Enum(StatusTypes::class)],
+            'search_text' => ['sometimes', 'nullable', 'string'],
+        ];
+    }
+}

@@ -1,0 +1,127 @@
+<template>
+    <PageTitle :title="designation ? 'Edit Designation' : 'Add Designation'" />
+
+    <div class="intro-y flex flex-col sm:flex-row items-center mt-8">
+        <h2 class="text-lg font-medium mr-auto">
+            Designations
+        </h2>
+    </div>
+
+    <div class="grid grid-cols-12 gap-6 mt-5">
+        <div class="intro-y col-span-12 lg:col-span-12">
+            <div class="intro-y box">
+                <div class="flex flex-col sm:flex-row items-center py-2 px-5 sm:p-5 bg-slate-100 border-b border-slate-200/60">
+                    <h2 class="font-medium text-base mr-auto">
+                        <span v-if="designation">Edit Designation</span>
+                        <span v-else>Add Designation</span>
+                    </h2>
+                    <SecondaryButton
+                        type="button"
+                        text="Clear"
+                        class="w-24"
+                        @click="clearFormData"
+                    />
+                </div>
+
+                <form
+                    @submit.prevent="saveDesignation();"
+                >
+                    <div class="p-5">
+                        <div class="grid grid-cols-12 gap-0 sm:gap-6">
+                            <div class="input-form col-span-12 sm:col-span-6 md:col-span-6 lg:col-span-4 xl:col-span-3">
+                                <FormInput
+                                    v-model:input-value="designationForm.name"
+                                    input-name="name"
+                                    input-label="Name"
+                                    :required="true"
+                                />
+                            </div>
+                            <div class="input-form col-span-12 sm:col-span-6 md:col-span-6 lg:col-span-4 xl:col-span-3">
+                                <FormInput
+                                    v-model:input-value="designationForm.code"
+                                    input-name="code"
+                                    input-label="Code"
+                                />
+                            </div>
+                        </div>
+                        <div class="mt-5">
+                            <Link :href="route('admin.designations.index')">
+                                <SecondaryButton
+                                    type="button"
+                                    text="Cancel"
+                                    class="w-24 mr-1"
+                                />
+                            </Link>
+
+                            <PrimaryButton
+                                type="submit"
+                                :text="designation ? 'Update' : 'Submit'"
+                                class="w-24"
+                            />
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</template>
+
+<script setup>
+import { useForm } from '@inertiajs/vue3';
+import FormInput from '@commonComponents/FormInput.vue';
+import PrimaryButton from '@commonComponents/PrimaryButton.vue';
+import SecondaryButton from '@commonComponents/SecondaryButton.vue';
+import { onMounted, watch } from 'vue';
+import { route } from 'ziggy';
+import { removeLocalStorage, setLocalStorage, saveLocalStorage } from '@commonServices/helper';
+
+const props = defineProps({
+    designation: {
+        type: Object,
+        default: null,
+    }
+});
+
+const designationForm = useForm({
+    name: null,
+    code: null,
+    watchEnabled: true,
+});
+
+const saveDesignation = () => {
+    designationForm.watchEnabled = false;
+    removeLocalStorage('designation');
+
+    if (props.designation) {
+        designationForm.put(route('admin.designations.update', props.designation.id));
+        return;
+    }
+
+    designationForm.post(route('admin.designations.store'));
+};
+
+const checkSaveLocalStorage = () => {
+    if (!props.designation) {
+        saveLocalStorage('designation', designationForm);
+    }
+};
+
+onMounted(() => {
+    if (props.designation) {
+        removeLocalStorage('designation');
+        Object.assign(designationForm, props.designation);
+    } else {
+        setLocalStorage('designation', designationForm);
+    }
+});
+
+const clearFormData = () => {
+    designationForm.reset();
+};
+
+watch(designationForm, () => {
+    if (designationForm.watchEnabled) {
+        checkSaveLocalStorage();
+    }
+}, { deep: true });
+</script>

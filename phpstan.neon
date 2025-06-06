@@ -1,0 +1,17 @@
+includes:
+    - vendor/larastan/larastan/extension.neon
+
+parameters:
+    paths:
+        - app/
+
+    # The level 9 is the highest level
+    level: 8
+
+    parallel:
+        maximumNumberOfProcesses: 5
+        minimumNumberOfJobsPerProcess: 2
+
+    ignoreErrors:
+        -   identifier: missingType.iterableValue
+        -   identifier: missingType.generics

@@ -1,0 +1,47 @@
+/* Base setup */
+@import "../common/vendor/_tailwind.css";
+@import "../common/vendor/_colors.css";
+@import "../common/vendor/fonts/_roboto.css";
+
+
+/* Theme Package CSS */
+@import "@left4code/tw-starter/dist/css/mixins/_media.css";
+@import "@left4code/tw-starter/dist/css/_btn.css";
+@import "@left4code/tw-starter/dist/css/_form-control.css";
+@import "@left4code/tw-starter/dist/css/_intro.css";
+@import "@left4code/tw-starter/dist/css/_dropdown.css";
+@import "@left4code/tw-starter/dist/css/_form-select.css";
+@import "@left4code/tw-starter/dist/css/_form-check.css";
+@import "alertifyjs/build/css/alertify.min.css";
+@import "alertifyjs/build/css/themes/default.min.css";
+@import "@left4code/tw-starter/dist/css/_table.css";
+@import "@left4code/tw-starter/dist/css/_pagination.css";
+@import "@left4code/tw-starter/dist/css/_box.css";
+@import "@left4code/tw-starter/dist/css/_modal.css";
+@import "@left4code/tw-starter/dist/css/_tab.css";
+@import "@left4code/tw-starter/dist/css/_alert.css";
+@import "@left4code/tw-starter/dist/css/_input-group.css";
+@import "@left4code/tw-starter/dist/css/_progress.css";
+@import "tippy.js/dist/tippy.css";
+@import "tippy.js/themes/light.css";
+@import "tippy.js/dist/svg-arrow.css";
+@import "tippy.js/animations/shift-away.css";
+
+/* Components CSS */
+@import "../common/vendor/components/_global.css";
+@import "../common/vendor/components/_login.css";
+@import "../common/vendor/components/_lucide-icon.css";
+@import "../common/vendor/components/_top-bar-boxed.css";
+@import "../common/vendor/components/_top-nav.css";
+@import "../common/vendor/components/_search-result.css";
+@import "../common/vendor/components/_content.css";
+@import "../common/vendor/components/_side-nav.css";
+@import '@vuepic/vue-datepicker/dist/main.css';
+@import "../common/vendor/components/_table-report.css";
+@import "vue-multiselect/dist/vue-multiselect.css";
+@import "../common/vendor/components/_notification-content.css";
+@import "../common/vendor/components/_notification.css";
+@import '../common/custom.css';
+@import "../common/vendor/components/_mobile-menu.css";
+@import "simplebar/src/simplebar.css";
+@import "../common/vendor/_tippy.css";

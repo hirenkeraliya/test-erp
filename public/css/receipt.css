@@ -1,0 +1,119 @@
+/* This file is not maintain by the Vite. Hence we are tracking this file in git */
+.receipt-container {
+    width: 79mm;
+    border-radius: 15px;
+    top: 0px;
+    background-color: #FFF;
+    padding: 5px;
+    text-transform: uppercase;
+}
+
+#day-close-print-view-width {
+    width: 111mm;
+    border-radius: 15px;
+    top: 0px;
+    background-color: #FFF;
+    padding: 5px;
+    text-transform: uppercase;
+}
+
+#table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: Lucida Sans Typewriter, Lucida Console, monaco, Bitstream Vera Sans Mono, monospace;
+}
+
+.dashed-underline,
+.tabletitle {
+    border-bottom: 1px dashed black;
+    margin-bottom: 10px;
+}
+
+.heading-part {
+    text-align: center;
+    align-items: center;
+    width: 79mm;
+}
+
+.second-part {
+    text-align: left;
+    word-break: break-all;
+    font-family: Lucida Sans Typewriter, Lucida Console, monaco, Bitstream Vera Sans Mono, monospace;
+}
+
+.bottom-part {
+    text-align: center;
+    align-items: center;
+    width: 79mm;
+    margin-top: 20px;
+}
+
+.item {
+    width: 30mm;
+}
+
+.qty {
+    width: 20mm;
+}
+
+.unit-price {
+    width: 20mm;
+}
+
+.amount {
+    width: 9mm;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.title-one {
+    width: 88mm;
+}
+
+.mt-5 {
+    margin-top: 2rem;
+}
+
+.first-denomination {
+    width: 45%;
+    text-align: left;
+    margin-left: 5%;
+}
+
+.second-denomination {
+    width: 30%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+.third-denomination {
+    width: 20%;
+    text-align: right;
+}
+
+.ml-5 {
+    margin-left: 5%;
+}
+
+.flex-and-between {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-weight: medium !important;
+}
+
+.font-weight-light {
+    font-weight: lighter !important;
+    font-size: 14px;
+}
+
+.pb-5 {
+    padding-bottom: 10px !important;
+}

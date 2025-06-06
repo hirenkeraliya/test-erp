@@ -1,0 +1,324 @@
+<template>
+    <Modal
+        size="modal-xl"
+        :show="modalShow"
+        @hidden="closeModal"
+    >
+        <ModalHeader>
+            <h2 class="font-medium text-base mr-auto pr-8">
+                {{ title }}
+            </h2>
+
+            <a
+                class="absolute right-0 top-0 mt-2 mr-3"
+                href="javascript:;"
+                @click="closeModal"
+            >
+                <X class="w-7 h-7 sm:w-8 sm:h-8 text-slate-400" />
+            </a>
+        </ModalHeader>
+
+        <ModalBody class="p-5 sm:p-10 text-left">
+            <div class="grid grid-cols-12 gap-0 sm:gap-6">
+                <div class="input-form col-span-12 sm:col-span-6 md:col-span-6 lg:col-span-4 xl:col-span-3">
+                    <FormInput
+                        v-model:input-value="state.article_number"
+                        type="text"
+                        input-label="Article Number"
+                        input-name="article_number"
+                        validation-field-name="article_number"
+                        :required="true"
+                    />
+                </div>
+
+                <div class="input-form col-span-12 sm:col-span-6 md:col-span-6 lg:col-span-4 xl:col-span-3">
+                    <OutlinePrimaryRequestButton
+                        text="Search"
+                        class="shadow-md text-sm mt-8"
+                        :disabled="state.is_button_disabled"
+                        @click="searchProductArticleNumber()"
+                    />
+                </div>
+            </div>
+
+            <h4 class="mt-4">
+                <div
+                    v-if="Object.keys(state.products).length > 0"
+                    class="block md:flex justify-between"
+                >
+                    <p>
+                        <Tippy
+                            :content="state.products[0].name"
+                        >
+                            <JBadge
+                                :label="state.products[0].name"
+                                type="success"
+                                class="mb-2 md:mb-0"
+                            />
+                        </Tippy>
+                    </p>
+
+                    <p>
+                        <Tippy
+                            content="Stock By Article Number"
+                        >
+                            <JBadge
+                                :label="`Stock By Article Number: ${getTotalStock}`"
+                                type="primary"
+                                class="mb-2 md:mb-0"
+                            />
+                        </Tippy>
+                    </p>
+
+                    <p>
+                        <Tippy
+                            content="Transfer Quantity"
+                        >
+                            <JBadge
+                                :label="`Transfer Quantity: ${getTransferQuantity}`"
+                                :type="getTransferQuantity >= 1 ? 'success' : 'danger'"
+                            />
+                        </Tippy>
+                    </p>
+                </div>
+
+                <div
+                    v-if="Object.keys(state.products).length > 0"
+                    class="grid grid-cols-12 gap-0 sm:gap-6 mt-2"
+                >
+                    <div class="input-form col-span-12 sm:col-span-6 md:col-span-6 lg:col-span-4 xl:col-span-3">
+                        <FormInput
+                            v-model:input-value="state.quantity"
+                            type="number"
+                            input-label="Same Quantity"
+                            input-name="quantity"
+                        />
+                    </div>
+
+                    <div class="input-form col-span-12 sm:col-span-6 md:col-span-6 lg:col-span-4 xl:col-span-3">
+                        <OutlinePrimaryRequestButton
+                            text="Apply To All"
+                            class="shadow-md text-sm mt-8"
+                            :disabled="state.quantity <= 0 || state.quantity === ''"
+                            @click="quantityApply()"
+                        />
+                    </div>
+                </div>
+            </h4>
+
+            <div
+                v-if="state.products.length && Object.keys(state.xNames).length && Object.keys(state.yNames).length"
+                class="mt-5"
+            >
+                <div class="overflow-x-auto">
+                    <table class="w-full table-auto rounded">
+                        <thead>
+                            <tr class="bg-zinc-100">
+                                <th class="font-medium px-5 py-3 border-b-2 border-l border-r border-t text-center">
+                                    #
+                                </th>
+                                <th
+                                    v-for="(xName, index) in state.xNames"
+                                    :key="index"
+                                    class="font-medium px-5 py-3 border-b-2 border-l border-r border-t text-center"
+                                >
+                                    {{ xName }}
+                                </th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr
+                                v-for="(yName, yIndex) in state.yNames"
+                                :key="yIndex"
+                            >
+                                <td class="font-medium px-5 py-3 border-b-2 border-l border-r border-t">
+                                    {{ yName }}
+                                </td>
+                                <td
+                                    v-for="(xName, xIndex) in state.xNames"
+                                    :key="xIndex"
+                                    class="font-medium px-5 py-3 border-b-2 border-l border-r border-t"
+                                >
+                                    <div
+                                        v-if="!getProducts(xName,yName).length"
+                                        class="text-red-500"
+                                    >
+                                        <StopSvg label-class="mx-auto" />
+                                    </div>
+
+                                    <div
+                                        v-for="(product, productIndex) in getProducts(xName,yName)"
+                                        v-else
+                                        :key="productIndex"
+                                    >
+                                        <div
+                                            v-if="product.source_stock <= 0"
+                                            class="mt-3 ml-3 text-danger font-extrabold"
+                                        >
+                                            0
+                                        </div>
+
+                                        <FormInput
+                                            v-else
+                                            :input-value="product.stock"
+                                            input-name="stock"
+                                            placeholder="Transfer Stock"
+                                            label-class="mt-0"
+                                            type="number"
+                                            class="w-[200px] lg:w-full"
+                                            @update:input-value="updateTheStock(product, $event)"
+                                        />
+
+                                        <span
+                                            v-if="product.source_stock <= 0"
+                                            class="pl-1 flex justify-between mt-1 text-danger font-extrabold"
+                                        >
+
+                                            Source Stock: {{ product.source_stock }} <br>
+                                        </span>
+
+                                        <span
+                                            v-else
+                                            class="pl-1 flex justify-between mt-1"
+                                        >
+                                            Source Stock: {{ product.source_stock }} <br>
+                                        </span>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <PrimaryButton
+                    text="Select Products"
+                    class="shadow-md text-sm mx-1 mt-4"
+                    @click="saveProducts"
+                />
+            </div>
+        </ModalBody>
+    </Modal>
+</template>
+
+<script setup>
+import '@left4code/tw-starter/dist/js/modal';
+import { X } from 'lucide-vue-next';
+import { Modal, ModalHeader, ModalBody } from '@commonVendor/model';
+import FormInput from '@commonComponents/FormInput.vue';
+import PrimaryButton from '@commonComponents/PrimaryButton.vue';
+import OutlinePrimaryRequestButton from '@commonComponents/OutlinePrimaryRequestButton.vue';
+import axios from 'axios';
+import { reactive, computed } from 'vue';
+import { route } from 'ziggy';
+import StopSvg from '@svg/StopSvg.vue';
+import { showErrorNotification } from '@commonServices/notifier';
+import JBadge from '@commonComponents/JBadge.vue';
+
+const props = defineProps({
+    modalShow: {
+        type: Boolean,
+        default: false,
+    },
+    title: {
+        type: String,
+        default: 'Advance Product Selection'
+    },
+    productArticleSearchUrl: {
+        type: String,
+        required: true,
+    },
+    stockTransferForm: {
+        type: Object,
+        required: true,
+    },
+});
+
+const state = reactive({
+    products: [],
+    data: [],
+    attributeNames: [],
+    xNames: [],
+    yNames: [],
+    article_number: null,
+    is_button_disabled: false,
+    quantity: null,
+});
+
+const emits = defineEmits(['close-modal', 'update:filter-advance-products-selection']);
+
+const closeModal = () => {
+    emits('close-modal');
+};
+
+const searchProductArticleNumber = () => {
+    state.is_button_disabled = true;
+    axios.post(route(props.productArticleSearchUrl), {
+        article_number: state.article_number,
+        source_location_id: props.stockTransferForm.source_location_id,
+        destination_location_id: props.stockTransferForm.destination_location_id,
+    }).then((response) => {
+        state.products = response.data.products;
+        state.attributeNames = response.data.attributeNames;
+        state.xNames = response.data.xNames;
+        state.yNames = response.data.yNames;
+        if (!Object.keys(state.xNames).length || !Object.keys(state.yNames).length) {
+            showErrorNotification('No products found for this article number');
+        }
+    }).catch((error) => {
+        showErrorNotification(error.response.data.message);
+    })
+        .finally(() => {
+            state.is_button_disabled = false;
+        });
+};
+
+const updateTheStock = (product, transferStock) => {
+    if (isNaN(transferStock)) {
+        return;
+    }
+
+    product.stock = Math.min(transferStock, product.source_stock);
+};
+
+const getTransferQuantity = computed(() => {
+    return state.products.reduce((transferQuantity, product) => transferQuantity + product.stock, 0);
+});
+
+const getTotalStock = computed(() => {
+    return state.products.reduce((transferQuantity, product) => transferQuantity + product.source_stock, 0);
+});
+
+const getProducts = (xName, yName) => {
+    xName = xName.replace(/\|/g, ' ').trim();
+    yName = yName.replace(/\|/g, ' ').trim();
+
+    return state.products.filter((product) => {
+        return product.combination === yName + ' ' + xName;
+    });
+};
+const saveProducts = () => {
+    const products = [];
+    for (const key in state.products) {
+        if (state.products[key].stock) {
+            products.push(state.products[key]);
+        }
+    }
+
+    emits('update:filter-advance-products-selection', products);
+
+    closeModal();
+};
+
+const quantityApply = () => {
+    for (const key in state.products) {
+        if (state.products[key].source_stock > 0) {
+            state.products[key].stock = state.products[key].source_stock;
+            if (state.products[key].source_stock >= state.quantity) {
+                state.products[key].stock = state.quantity;
+            }
+        }
+    }
+    saveProducts();
+};
+</script>

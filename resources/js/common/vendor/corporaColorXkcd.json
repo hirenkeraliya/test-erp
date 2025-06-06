@@ -1,0 +1,5731 @@
+[
+    {
+        "color": "darker blue",
+        "hex": "#011288",
+        "rgb": "RGB(1,18,136)"
+    },
+
+    {
+        "color": "darker green",
+        "hex": "#087804",
+        "rgb": "RGB(8,120,4)"
+    },
+
+    {
+        "color": "green again",
+        "hex": "#16d43f",
+        "rgb": "RGB(22,212,63)"
+    },
+
+    {
+        "color": "darker purple",
+        "hex": "#5f1b6b",
+        "rgb": "RGB(95,27,107)"
+    },
+
+    {
+        "color": "darker pink",
+        "hex": "#c4387f",
+        "rgb": "RGB(196,56,127)"
+    },
+
+    {
+        "color": "cloudy blue",
+        "hex": "#acc2d9",
+        "rgb": "RGB(172,194,217)"
+    },
+
+    {
+        "color": "dark pastel green",
+        "hex": "#56ae57",
+        "rgb": "RGB(86,174,87)"
+    },
+
+    {
+        "color": "dust",
+        "hex": "#b2996e",
+        "rgb": "RGB(178,153,110)"
+    },
+
+    {
+        "color": "electric lime",
+        "hex": "#a8ff04",
+        "rgb": "RGB(168,255,4)"
+    },
+
+    {
+        "color": "fresh green",
+        "hex": "#69d84f",
+        "rgb": "RGB(105,216,79)"
+    },
+
+    {
+        "color": "light eggplant",
+        "hex": "#894585",
+        "rgb": "RGB(137,69,133)"
+    },
+
+    {
+        "color": "nasty green",
+        "hex": "#70b23f",
+        "rgb": "RGB(112,178,63)"
+    },
+
+    {
+        "color": "really light blue",
+        "hex": "#d4ffff",
+        "rgb": "RGB(212,255,255)"
+    },
+
+    {
+        "color": "tea",
+        "hex": "#65ab7c",
+        "rgb": "RGB(101,171,124)"
+    },
+
+    {
+        "color": "warm purple",
+        "hex": "#952e8f",
+        "rgb": "RGB(149,46,143)"
+    },
+
+    {
+        "color": "yellowish tan",
+        "hex": "#fcfc81",
+        "rgb": "RGB(252,252,129)"
+    },
+
+    {
+        "color": "cement",
+        "hex": "#a5a391",
+        "rgb": "RGB(165,163,145)"
+    },
+
+    {
+        "color": "dark grass green",
+        "hex": "#388004",
+        "rgb": "RGB(56,128,4)"
+    },
+
+    {
+        "color": "dusty teal",
+        "hex": "#4c9085",
+        "rgb": "RGB(76,144,133)"
+    },
+
+    {
+        "color": "grey teal",
+        "hex": "#5e9b8a",
+        "rgb": "RGB(94,155,138)"
+    },
+
+    {
+        "color": "macaroni and cheese",
+        "hex": "#efb435",
+        "rgb": "RGB(239,180,53)"
+    },
+
+    {
+        "color": "pinkish tan",
+        "hex": "#d99b82",
+        "rgb": "RGB(217,155,130)"
+    },
+
+    {
+        "color": "spruce",
+        "hex": "#0a5f38",
+        "rgb": "RGB(10,95,56)"
+    },
+
+    {
+        "color": "strong blue",
+        "hex": "#0c06f7",
+        "rgb": "RGB(12,6,247)"
+    },
+
+    {
+        "color": "toxic green",
+        "hex": "#61de2a",
+        "rgb": "RGB(97,222,42)"
+    },
+
+    {
+        "color": "windows blue",
+        "hex": "#3778bf",
+        "rgb": "RGB(55,120,191)"
+    },
+
+    {
+        "color": "blue blue",
+        "hex": "#2242c7",
+        "rgb": "RGB(34,66,199)"
+    },
+
+    {
+        "color": "blue with a hint of purple",
+        "hex": "#533cc6",
+        "rgb": "RGB(83,60,198)"
+    },
+
+    {
+        "color": "booger",
+        "hex": "#9bb53c",
+        "rgb": "RGB(155,181,60)"
+    },
+
+    {
+        "color": "bright sea green",
+        "hex": "#05ffa6",
+        "rgb": "RGB(5,255,166)"
+    },
+
+    {
+        "color": "dark green blue",
+        "hex": "#1f6357",
+        "rgb": "RGB(31,99,87)"
+    },
+
+    {
+        "color": "deep turquoise",
+        "hex": "#017374",
+        "rgb": "RGB(1,115,116)"
+    },
+
+    {
+        "color": "green teal",
+        "hex": "#0cb577",
+        "rgb": "RGB(12,181,119)"
+    },
+
+    {
+        "color": "strong pink",
+        "hex": "#ff0789",
+        "rgb": "RGB(255,7,137)"
+    },
+
+    {
+        "color": "bland",
+        "hex": "#afa88b",
+        "rgb": "RGB(175,168,139)"
+    },
+
+    {
+        "color": "deep aqua",
+        "hex": "#08787f",
+        "rgb": "RGB(8,120,127)"
+    },
+
+    {
+        "color": "lavender pink",
+        "hex": "#dd85d7",
+        "rgb": "RGB(221,133,215)"
+    },
+
+    {
+        "color": "light moss green",
+        "hex": "#a6c875",
+        "rgb": "RGB(166,200,117)"
+    },
+
+    {
+        "color": "light seafoam green",
+        "hex": "#a7ffb5",
+        "rgb": "RGB(167,255,181)"
+    },
+
+    {
+        "color": "olive yellow",
+        "hex": "#c2b709",
+        "rgb": "RGB(194,183,9)"
+    },
+
+    {
+        "color": "pig pink",
+        "hex": "#e78ea5",
+        "rgb": "RGB(231,142,165)"
+    },
+
+    {
+        "color": "deep lilac",
+        "hex": "#966ebd",
+        "rgb": "RGB(150,110,189)"
+    },
+
+    {
+        "color": "desert",
+        "hex": "#ccad60",
+        "rgb": "RGB(204,173,96)"
+    },
+
+    {
+        "color": "dusty lavender",
+        "hex": "#ac86a8",
+        "rgb": "RGB(172,134,168)"
+    },
+
+    {
+        "color": "purpley grey",
+        "hex": "#947e94",
+        "rgb": "RGB(148,126,148)"
+    },
+
+    {
+        "color": "purply",
+        "hex": "#983fb2",
+        "rgb": "RGB(152,63,178)"
+    },
+
+    {
+        "color": "candy pink",
+        "hex": "#ff63e9",
+        "rgb": "RGB(255,99,233)"
+    },
+
+    {
+        "color": "light pastel green",
+        "hex": "#b2fba5",
+        "rgb": "RGB(178,251,165)"
+    },
+
+    {
+        "color": "boring green",
+        "hex": "#63b365",
+        "rgb": "RGB(99,179,101)"
+    },
+
+    {
+        "color": "kiwi green",
+        "hex": "#8ee53f",
+        "rgb": "RGB(142,229,63)"
+    },
+
+    {
+        "color": "light grey green",
+        "hex": "#b7e1a1",
+        "rgb": "RGB(183,225,161)"
+    },
+
+    {
+        "color": "orange pink",
+        "hex": "#ff6f52",
+        "rgb": "RGB(255,111,82)"
+    },
+
+    {
+        "color": "tea green",
+        "hex": "#bdf8a3",
+        "rgb": "RGB(189,248,163)"
+    },
+
+    {
+        "color": "very light brown",
+        "hex": "#d3b683",
+        "rgb": "RGB(211,182,131)"
+    },
+
+    {
+        "color": "egg shell",
+        "hex": "#fffcc4",
+        "rgb": "RGB(255,252,196)"
+    },
+
+    {
+        "color": "eggplant purple",
+        "hex": "#430541",
+        "rgb": "RGB(67,5,65)"
+    },
+
+    {
+        "color": "powder pink",
+        "hex": "#ffb2d0",
+        "rgb": "RGB(255,178,208)"
+    },
+
+    {
+        "color": "reddish grey",
+        "hex": "#997570",
+        "rgb": "RGB(153,117,112)"
+    },
+
+    {
+        "color": "baby shit brown",
+        "hex": "#ad900d",
+        "rgb": "RGB(173,144,13)"
+    },
+
+    {
+        "color": "liliac",
+        "hex": "#c48efd",
+        "rgb": "RGB(196,142,253)"
+    },
+
+    {
+        "color": "stormy blue",
+        "hex": "#507b9c",
+        "rgb": "RGB(80,123,156)"
+    },
+
+    {
+        "color": "ugly brown",
+        "hex": "#7d7103",
+        "rgb": "RGB(125,113,3)"
+    },
+
+    {
+        "color": "custard",
+        "hex": "#fffd78",
+        "rgb": "RGB(255,253,120)"
+    },
+
+    {
+        "color": "darkish pink",
+        "hex": "#da467d",
+        "rgb": "RGB(218,70,125)"
+    },
+
+    {
+        "color": "deep brown",
+        "hex": "#410200",
+        "rgb": "RGB(65,2,0)"
+    },
+
+    {
+        "color": "greenish beige",
+        "hex": "#c9d179",
+        "rgb": "RGB(201,209,121)"
+    },
+
+    {
+        "color": "manilla",
+        "hex": "#fffa86",
+        "rgb": "RGB(255,250,134)"
+    },
+
+    {
+        "color": "off blue",
+        "hex": "#5684ae",
+        "rgb": "RGB(86,132,174)"
+    },
+
+    {
+        "color": "battleship grey",
+        "hex": "#6b7c85",
+        "rgb": "RGB(107,124,133)"
+    },
+
+    {
+        "color": "browny green",
+        "hex": "#6f6c0a",
+        "rgb": "RGB(111,108,10)"
+    },
+
+    {
+        "color": "bruise",
+        "hex": "#7e4071",
+        "rgb": "RGB(126,64,113)"
+    },
+
+    {
+        "color": "kelley green",
+        "hex": "#009337",
+        "rgb": "RGB(0,147,55)"
+    },
+
+    {
+        "color": "sickly yellow",
+        "hex": "#d0e429",
+        "rgb": "RGB(208,228,41)"
+    },
+
+    {
+        "color": "sunny yellow",
+        "hex": "#fff917",
+        "rgb": "RGB(255,249,23)"
+    },
+
+    {
+        "color": "azul",
+        "hex": "#1d5dec",
+        "rgb": "RGB(29,93,236)"
+    },
+
+    {
+        "color": "darkgreen",
+        "hex": "#054907",
+        "rgb": "RGB(5,73,7)"
+    },
+
+    {
+        "color": "green/yellow",
+        "hex": "#b5ce08",
+        "rgb": "RGB(181,206,8)"
+    },
+
+    {
+        "color": "lichen",
+        "hex": "#8fb67b",
+        "rgb": "RGB(143,182,123)"
+    },
+
+    {
+        "color": "light light green",
+        "hex": "#c8ffb0",
+        "rgb": "RGB(200,255,176)"
+    },
+
+    {
+        "color": "pale gold",
+        "hex": "#fdde6c",
+        "rgb": "RGB(253,222,108)"
+    },
+
+    {
+        "color": "sun yellow",
+        "hex": "#ffdf22",
+        "rgb": "RGB(255,223,34)"
+    },
+
+    {
+        "color": "tan green",
+        "hex": "#a9be70",
+        "rgb": "RGB(169,190,112)"
+    },
+
+    {
+        "color": "burple",
+        "hex": "#6832e3",
+        "rgb": "RGB(104,50,227)"
+    },
+
+    {
+        "color": "butterscotch",
+        "hex": "#fdb147",
+        "rgb": "RGB(253,177,71)"
+    },
+
+    {
+        "color": "toupe",
+        "hex": "#c7ac7d",
+        "rgb": "RGB(199,172,125)"
+    },
+
+    {
+        "color": "dark cream",
+        "hex": "#fff39a",
+        "rgb": "RGB(255,243,154)"
+    },
+
+    {
+        "color": "indian red",
+        "hex": "#850e04",
+        "rgb": "RGB(133,14,4)"
+    },
+
+    {
+        "color": "light lavendar",
+        "hex": "#efc0fe",
+        "rgb": "RGB(239,192,254)"
+    },
+
+    {
+        "color": "poison green",
+        "hex": "#40fd14",
+        "rgb": "RGB(64,253,20)"
+    },
+
+    {
+        "color": "baby puke green",
+        "hex": "#b6c406",
+        "rgb": "RGB(182,196,6)"
+    },
+
+    {
+        "color": "bright yellow green",
+        "hex": "#9dff00",
+        "rgb": "RGB(157,255,0)"
+    },
+
+    {
+        "color": "charcoal grey",
+        "hex": "#3c4142",
+        "rgb": "RGB(60,65,66)"
+    },
+
+    {
+        "color": "squash",
+        "hex": "#f2ab15",
+        "rgb": "RGB(242,171,21)"
+    },
+
+    {
+        "color": "cinnamon",
+        "hex": "#ac4f06",
+        "rgb": "RGB(172,79,6)"
+    },
+
+    {
+        "color": "light pea green",
+        "hex": "#c4fe82",
+        "rgb": "RGB(196,254,130)"
+    },
+
+    {
+        "color": "radioactive green",
+        "hex": "#2cfa1f",
+        "rgb": "RGB(44,250,31)"
+    },
+
+    {
+        "color": "raw sienna",
+        "hex": "#9a6200",
+        "rgb": "RGB(154,98,0)"
+    },
+
+    {
+        "color": "baby purple",
+        "hex": "#ca9bf7",
+        "rgb": "RGB(202,155,247)"
+    },
+
+    {
+        "color": "cocoa",
+        "hex": "#875f42",
+        "rgb": "RGB(135,95,66)"
+    },
+
+    {
+        "color": "light royal blue",
+        "hex": "#3a2efe",
+        "rgb": "RGB(58,46,254)"
+    },
+
+    {
+        "color": "orangeish",
+        "hex": "#fd8d49",
+        "rgb": "RGB(253,141,73)"
+    },
+
+    {
+        "color": "rust brown",
+        "hex": "#8b3103",
+        "rgb": "RGB(139,49,3)"
+    },
+
+    {
+        "color": "sand brown",
+        "hex": "#cba560",
+        "rgb": "RGB(203,165,96)"
+    },
+
+    {
+        "color": "swamp",
+        "hex": "#698339",
+        "rgb": "RGB(105,131,57)"
+    },
+
+    {
+        "color": "tealish green",
+        "hex": "#0cdc73",
+        "rgb": "RGB(12,220,115)"
+    },
+
+    {
+        "color": "burnt siena",
+        "hex": "#b75203",
+        "rgb": "RGB(183,82,3)"
+    },
+
+    {
+        "color": "camo",
+        "hex": "#7f8f4e",
+        "rgb": "RGB(127,143,78)"
+    },
+
+    {
+        "color": "dusk blue",
+        "hex": "#26538d",
+        "rgb": "RGB(38,83,141)"
+    },
+
+    {
+        "color": "fern",
+        "hex": "#63a950",
+        "rgb": "RGB(99,169,80)"
+    },
+
+    {
+        "color": "old rose",
+        "hex": "#c87f89",
+        "rgb": "RGB(200,127,137)"
+    },
+
+    {
+        "color": "pale light green",
+        "hex": "#b1fc99",
+        "rgb": "RGB(177,252,153)"
+    },
+
+    {
+        "color": "peachy pink",
+        "hex": "#ff9a8a",
+        "rgb": "RGB(255,154,138)"
+    },
+
+    {
+        "color": "rosy pink",
+        "hex": "#f6688e",
+        "rgb": "RGB(246,104,142)"
+    },
+
+    {
+        "color": "light bluish green",
+        "hex": "#76fda8",
+        "rgb": "RGB(118,253,168)"
+    },
+
+    {
+        "color": "light bright green",
+        "hex": "#53fe5c",
+        "rgb": "RGB(83,254,92)"
+    },
+
+    {
+        "color": "light neon green",
+        "hex": "#4efd54",
+        "rgb": "RGB(78,253,84)"
+    },
+
+    {
+        "color": "light seafoam",
+        "hex": "#a0febf",
+        "rgb": "RGB(160,254,191)"
+    },
+
+    {
+        "color": "tiffany blue",
+        "hex": "#7bf2da",
+        "rgb": "RGB(123,242,218)"
+    },
+
+    {
+        "color": "washed out green",
+        "hex": "#bcf5a6",
+        "rgb": "RGB(188,245,166)"
+    },
+
+    {
+        "color": "browny orange",
+        "hex": "#ca6b02",
+        "rgb": "RGB(202,107,2)"
+    },
+
+    {
+        "color": "nice blue",
+        "hex": "#107ab0",
+        "rgb": "RGB(16,122,176)"
+    },
+
+    {
+        "color": "sapphire",
+        "hex": "#2138ab",
+        "rgb": "RGB(33,56,171)"
+    },
+
+    {
+        "color": "greyish teal",
+        "hex": "#719f91",
+        "rgb": "RGB(113,159,145)"
+    },
+
+    {
+        "color": "orangey yellow",
+        "hex": "#fdb915",
+        "rgb": "RGB(253,185,21)"
+    },
+
+    {
+        "color": "parchment",
+        "hex": "#fefcaf",
+        "rgb": "RGB(254,252,175)"
+    },
+
+    {
+        "color": "straw",
+        "hex": "#fcf679",
+        "rgb": "RGB(252,246,121)"
+    },
+
+    {
+        "color": "very dark brown",
+        "hex": "#1d0200",
+        "rgb": "RGB(29,2,0)"
+    },
+
+    {
+        "color": "terracota",
+        "hex": "#cb6843",
+        "rgb": "RGB(203,104,67)"
+    },
+
+    {
+        "color": "ugly blue",
+        "hex": "#31668a",
+        "rgb": "RGB(49,102,138)"
+    },
+
+    {
+        "color": "clear blue",
+        "hex": "#247afd",
+        "rgb": "RGB(36,122,253)"
+    },
+
+    {
+        "color": "creme",
+        "hex": "#ffffb6",
+        "rgb": "RGB(255,255,182)"
+    },
+
+    {
+        "color": "foam green",
+        "hex": "#90fda9",
+        "rgb": "RGB(144,253,169)"
+    },
+
+    {
+        "color": "grey/green",
+        "hex": "#86a17d",
+        "rgb": "RGB(134,161,125)"
+    },
+
+    {
+        "color": "light gold",
+        "hex": "#fddc5c",
+        "rgb": "RGB(253,220,92)"
+    },
+
+    {
+        "color": "seafoam blue",
+        "hex": "#78d1b6",
+        "rgb": "RGB(120,209,182)"
+    },
+
+    {
+        "color": "topaz",
+        "hex": "#13bbaf",
+        "rgb": "RGB(19,187,175)"
+    },
+
+    {
+        "color": "violet pink",
+        "hex": "#fb5ffc",
+        "rgb": "RGB(251,95,252)"
+    },
+
+    {
+        "color": "wintergreen",
+        "hex": "#20f986",
+        "rgb": "RGB(32,249,134)"
+    },
+
+    {
+        "color": "yellow tan",
+        "hex": "#ffe36e",
+        "rgb": "RGB(255,227,110)"
+    },
+
+    {
+        "color": "dark fuchsia",
+        "hex": "#9d0759",
+        "rgb": "RGB(157,7,89)"
+    },
+
+    {
+        "color": "indigo blue",
+        "hex": "#3a18b1",
+        "rgb": "RGB(58,24,177)"
+    },
+
+    {
+        "color": "light yellowish green",
+        "hex": "#c2ff89",
+        "rgb": "RGB(194,255,137)"
+    },
+
+    {
+        "color": "pale magenta",
+        "hex": "#d767ad",
+        "rgb": "RGB(215,103,173)"
+    },
+
+    {
+        "color": "rich purple",
+        "hex": "#720058",
+        "rgb": "RGB(114,0,88)"
+    },
+
+    {
+        "color": "sunflower yellow",
+        "hex": "#ffda03",
+        "rgb": "RGB(255,218,3)"
+    },
+
+    {
+        "color": "green/blue",
+        "hex": "#01c08d",
+        "rgb": "RGB(1,192,141)"
+    },
+
+    {
+        "color": "leather",
+        "hex": "#ac7434",
+        "rgb": "RGB(172,116,52)"
+    },
+
+    {
+        "color": "racing green",
+        "hex": "#014600",
+        "rgb": "RGB(1,70,0)"
+    },
+
+    {
+        "color": "vivid purple",
+        "hex": "#9900fa",
+        "rgb": "RGB(153,0,250)"
+    },
+
+    {
+        "color": "dark royal blue",
+        "hex": "#02066f",
+        "rgb": "RGB(2,6,111)"
+    },
+
+    {
+        "color": "hazel",
+        "hex": "#8e7618",
+        "rgb": "RGB(142,118,24)"
+    },
+
+    {
+        "color": "muted pink",
+        "hex": "#d1768f",
+        "rgb": "RGB(209,118,143)"
+    },
+
+    {
+        "color": "booger green",
+        "hex": "#96b403",
+        "rgb": "RGB(150,180,3)"
+    },
+
+    {
+        "color": "canary",
+        "hex": "#fdff63",
+        "rgb": "RGB(253,255,99)"
+    },
+
+    {
+        "color": "cool grey",
+        "hex": "#95a3a6",
+        "rgb": "RGB(149,163,166)"
+    },
+
+    {
+        "color": "dark taupe",
+        "hex": "#7f684e",
+        "rgb": "RGB(127,104,78)"
+    },
+
+    {
+        "color": "darkish purple",
+        "hex": "#751973",
+        "rgb": "RGB(117,25,115)"
+    },
+
+    {
+        "color": "true green",
+        "hex": "#089404",
+        "rgb": "RGB(8,148,4)"
+    },
+
+    {
+        "color": "coral pink",
+        "hex": "#ff6163",
+        "rgb": "RGB(255,97,99)"
+    },
+
+    {
+        "color": "dark sage",
+        "hex": "#598556",
+        "rgb": "RGB(89,133,86)"
+    },
+
+    {
+        "color": "dark slate blue",
+        "hex": "#214761",
+        "rgb": "RGB(33,71,97)"
+    },
+
+    {
+        "color": "flat blue",
+        "hex": "#3c73a8",
+        "rgb": "RGB(60,115,168)"
+    },
+
+    {
+        "color": "mushroom",
+        "hex": "#ba9e88",
+        "rgb": "RGB(186,158,136)"
+    },
+
+    {
+        "color": "rich blue",
+        "hex": "#021bf9",
+        "rgb": "RGB(2,27,249)"
+    },
+
+    {
+        "color": "dirty purple",
+        "hex": "#734a65",
+        "rgb": "RGB(115,74,101)"
+    },
+
+    {
+        "color": "greenblue",
+        "hex": "#23c48b",
+        "rgb": "RGB(35,196,139)"
+    },
+
+    {
+        "color": "icky green",
+        "hex": "#8fae22",
+        "rgb": "RGB(143,174,34)"
+    },
+
+    {
+        "color": "light khaki",
+        "hex": "#e6f2a2",
+        "rgb": "RGB(230,242,162)"
+    },
+
+    {
+        "color": "warm blue",
+        "hex": "#4b57db",
+        "rgb": "RGB(75,87,219)"
+    },
+
+    {
+        "color": "dark hot pink",
+        "hex": "#d90166",
+        "rgb": "RGB(217,1,102)"
+    },
+
+    {
+        "color": "deep sea blue",
+        "hex": "#015482",
+        "rgb": "RGB(1,84,130)"
+    },
+
+    {
+        "color": "carmine",
+        "hex": "#9d0216",
+        "rgb": "RGB(157,2,22)"
+    },
+
+    {
+        "color": "dark yellow green",
+        "hex": "#728f02",
+        "rgb": "RGB(114,143,2)"
+    },
+
+    {
+        "color": "pale peach",
+        "hex": "#ffe5ad",
+        "rgb": "RGB(255,229,173)"
+    },
+
+    {
+        "color": "plum purple",
+        "hex": "#4e0550",
+        "rgb": "RGB(78,5,80)"
+    },
+
+    {
+        "color": "golden rod",
+        "hex": "#f9bc08",
+        "rgb": "RGB(249,188,8)"
+    },
+
+    {
+        "color": "neon red",
+        "hex": "#ff073a",
+        "rgb": "RGB(255,7,58)"
+    },
+
+    {
+        "color": "old pink",
+        "hex": "#c77986",
+        "rgb": "RGB(199,121,134)"
+    },
+
+    {
+        "color": "very pale blue",
+        "hex": "#d6fffe",
+        "rgb": "RGB(214,255,254)"
+    },
+
+    {
+        "color": "blood orange",
+        "hex": "#fe4b03",
+        "rgb": "RGB(254,75,3)"
+    },
+
+    {
+        "color": "grapefruit",
+        "hex": "#fd5956",
+        "rgb": "RGB(253,89,86)"
+    },
+
+    {
+        "color": "sand yellow",
+        "hex": "#fce166",
+        "rgb": "RGB(252,225,102)"
+    },
+
+    {
+        "color": "clay brown",
+        "hex": "#b2713d",
+        "rgb": "RGB(178,113,61)"
+    },
+
+    {
+        "color": "dark blue grey",
+        "hex": "#1f3b4d",
+        "rgb": "RGB(31,59,77)"
+    },
+
+    {
+        "color": "flat green",
+        "hex": "#699d4c",
+        "rgb": "RGB(105,157,76)"
+    },
+
+    {
+        "color": "light green blue",
+        "hex": "#56fca2",
+        "rgb": "RGB(86,252,162)"
+    },
+
+    {
+        "color": "warm pink",
+        "hex": "#fb5581",
+        "rgb": "RGB(251,85,129)"
+    },
+
+    {
+        "color": "dodger blue",
+        "hex": "#3e82fc",
+        "rgb": "RGB(62,130,252)"
+    },
+
+    {
+        "color": "gross green",
+        "hex": "#a0bf16",
+        "rgb": "RGB(160,191,22)"
+    },
+
+    {
+        "color": "ice",
+        "hex": "#d6fffa",
+        "rgb": "RGB(214,255,250)"
+    },
+
+    {
+        "color": "metallic blue",
+        "hex": "#4f738e",
+        "rgb": "RGB(79,115,142)"
+    },
+
+    {
+        "color": "pale salmon",
+        "hex": "#ffb19a",
+        "rgb": "RGB(255,177,154)"
+    },
+
+    {
+        "color": "sap green",
+        "hex": "#5c8b15",
+        "rgb": "RGB(92,139,21)"
+    },
+
+    {
+        "color": "algae",
+        "hex": "#54ac68",
+        "rgb": "RGB(84,172,104)"
+    },
+
+    {
+        "color": "bluey grey",
+        "hex": "#89a0b0",
+        "rgb": "RGB(137,160,176)"
+    },
+
+    {
+        "color": "greeny grey",
+        "hex": "#7ea07a",
+        "rgb": "RGB(126,160,122)"
+    },
+
+    {
+        "color": "highlighter green",
+        "hex": "#1bfc06",
+        "rgb": "RGB(27,252,6)"
+    },
+
+    {
+        "color": "light light blue",
+        "hex": "#cafffb",
+        "rgb": "RGB(202,255,251)"
+    },
+
+    {
+        "color": "light mint",
+        "hex": "#b6ffbb",
+        "rgb": "RGB(182,255,187)"
+    },
+
+    {
+        "color": "raw umber",
+        "hex": "#a75e09",
+        "rgb": "RGB(167,94,9)"
+    },
+
+    {
+        "color": "vivid blue",
+        "hex": "#152eff",
+        "rgb": "RGB(21,46,255)"
+    },
+
+    {
+        "color": "deep lavender",
+        "hex": "#8d5eb7",
+        "rgb": "RGB(141,94,183)"
+    },
+
+    {
+        "color": "dull teal",
+        "hex": "#5f9e8f",
+        "rgb": "RGB(95,158,143)"
+    },
+
+    {
+        "color": "light greenish blue",
+        "hex": "#63f7b4",
+        "rgb": "RGB(99,247,180)"
+    },
+
+    {
+        "color": "mud green",
+        "hex": "#606602",
+        "rgb": "RGB(96,102,2)"
+    },
+
+    {
+        "color": "pinky",
+        "hex": "#fc86aa",
+        "rgb": "RGB(252,134,170)"
+    },
+
+    {
+        "color": "red wine",
+        "hex": "#8c0034",
+        "rgb": "RGB(140,0,52)"
+    },
+
+    {
+        "color": "shit green",
+        "hex": "#758000",
+        "rgb": "RGB(117,128,0)"
+    },
+
+    {
+        "color": "tan brown",
+        "hex": "#ab7e4c",
+        "rgb": "RGB(171,126,76)"
+    },
+
+    {
+        "color": "darkblue",
+        "hex": "#030764",
+        "rgb": "RGB(3,7,100)"
+    },
+
+    {
+        "color": "rosa",
+        "hex": "#fe86a4",
+        "rgb": "RGB(254,134,164)"
+    },
+
+    {
+        "color": "lipstick",
+        "hex": "#d5174e",
+        "rgb": "RGB(213,23,78)"
+    },
+
+    {
+        "color": "pale mauve",
+        "hex": "#fed0fc",
+        "rgb": "RGB(254,208,252)"
+    },
+
+    {
+        "color": "claret",
+        "hex": "#680018",
+        "rgb": "RGB(104,0,24)"
+    },
+
+    {
+        "color": "dandelion",
+        "hex": "#fedf08",
+        "rgb": "RGB(254,223,8)"
+    },
+
+    {
+        "color": "orangered",
+        "hex": "#fe420f",
+        "rgb": "RGB(254,66,15)"
+    },
+
+    {
+        "color": "poop green",
+        "hex": "#6f7c00",
+        "rgb": "RGB(111,124,0)"
+    },
+
+    {
+        "color": "ruby",
+        "hex": "#ca0147",
+        "rgb": "RGB(202,1,71)"
+    },
+
+    {
+        "color": "dark",
+        "hex": "#1b2431",
+        "rgb": "RGB(27,36,49)"
+    },
+
+    {
+        "color": "greenish turquoise",
+        "hex": "#00fbb0",
+        "rgb": "RGB(0,251,176)"
+    },
+
+    {
+        "color": "pastel red",
+        "hex": "#db5856",
+        "rgb": "RGB(219,88,86)"
+    },
+
+    {
+        "color": "piss yellow",
+        "hex": "#ddd618",
+        "rgb": "RGB(221,214,24)"
+    },
+
+    {
+        "color": "bright cyan",
+        "hex": "#41fdfe",
+        "rgb": "RGB(65,253,254)"
+    },
+
+    {
+        "color": "dark coral",
+        "hex": "#cf524e",
+        "rgb": "RGB(207,82,78)"
+    },
+
+    {
+        "color": "algae green",
+        "hex": "#21c36f",
+        "rgb": "RGB(33,195,111)"
+    },
+
+    {
+        "color": "darkish red",
+        "hex": "#a90308",
+        "rgb": "RGB(169,3,8)"
+    },
+
+    {
+        "color": "reddy brown",
+        "hex": "#6e1005",
+        "rgb": "RGB(110,16,5)"
+    },
+
+    {
+        "color": "blush pink",
+        "hex": "#fe828c",
+        "rgb": "RGB(254,130,140)"
+    },
+
+    {
+        "color": "camouflage green",
+        "hex": "#4b6113",
+        "rgb": "RGB(75,97,19)"
+    },
+
+    {
+        "color": "lawn green",
+        "hex": "#4da409",
+        "rgb": "RGB(77,164,9)"
+    },
+
+    {
+        "color": "putty",
+        "hex": "#beae8a",
+        "rgb": "RGB(190,174,138)"
+    },
+
+    {
+        "color": "vibrant blue",
+        "hex": "#0339f8",
+        "rgb": "RGB(3,57,248)"
+    },
+
+    {
+        "color": "dark sand",
+        "hex": "#a88f59",
+        "rgb": "RGB(168,143,89)"
+    },
+
+    {
+        "color": "purple/blue",
+        "hex": "#5d21d0",
+        "rgb": "RGB(93,33,208)"
+    },
+
+    {
+        "color": "saffron",
+        "hex": "#feb209",
+        "rgb": "RGB(254,178,9)"
+    },
+
+    {
+        "color": "twilight",
+        "hex": "#4e518b",
+        "rgb": "RGB(78,81,139)"
+    },
+
+    {
+        "color": "warm brown",
+        "hex": "#964e02",
+        "rgb": "RGB(150,78,2)"
+    },
+
+    {
+        "color": "bluegrey",
+        "hex": "#85a3b2",
+        "rgb": "RGB(133,163,178)"
+    },
+
+    {
+        "color": "bubble gum pink",
+        "hex": "#ff69af",
+        "rgb": "RGB(255,105,175)"
+    },
+
+    {
+        "color": "duck egg blue",
+        "hex": "#c3fbf4",
+        "rgb": "RGB(195,251,244)"
+    },
+
+    {
+        "color": "greenish cyan",
+        "hex": "#2afeb7",
+        "rgb": "RGB(42,254,183)"
+    },
+
+    {
+        "color": "petrol",
+        "hex": "#005f6a",
+        "rgb": "RGB(0,95,106)"
+    },
+
+    {
+        "color": "royal",
+        "hex": "#0c1793",
+        "rgb": "RGB(12,23,147)"
+    },
+
+    {
+        "color": "butter",
+        "hex": "#ffff81",
+        "rgb": "RGB(255,255,129)"
+    },
+
+    {
+        "color": "dusty orange",
+        "hex": "#f0833a",
+        "rgb": "RGB(240,131,58)"
+    },
+
+    {
+        "color": "off yellow",
+        "hex": "#f1f33f",
+        "rgb": "RGB(241,243,63)"
+    },
+
+    {
+        "color": "pale olive green",
+        "hex": "#b1d27b",
+        "rgb": "RGB(177,210,123)"
+    },
+
+    {
+        "color": "orangish",
+        "hex": "#fc824a",
+        "rgb": "RGB(252,130,74)"
+    },
+
+    {
+        "color": "leaf",
+        "hex": "#71aa34",
+        "rgb": "RGB(113,170,52)"
+    },
+
+    {
+        "color": "light blue grey",
+        "hex": "#b7c9e2",
+        "rgb": "RGB(183,201,226)"
+    },
+
+    {
+        "color": "dried blood",
+        "hex": "#4b0101",
+        "rgb": "RGB(75,1,1)"
+    },
+
+    {
+        "color": "lightish purple",
+        "hex": "#a552e6",
+        "rgb": "RGB(165,82,230)"
+    },
+
+    {
+        "color": "rusty red",
+        "hex": "#af2f0d",
+        "rgb": "RGB(175,47,13)"
+    },
+
+    {
+        "color": "lavender blue",
+        "hex": "#8b88f8",
+        "rgb": "RGB(139,136,248)"
+    },
+
+    {
+        "color": "light grass green",
+        "hex": "#9af764",
+        "rgb": "RGB(154,247,100)"
+    },
+
+    {
+        "color": "light mint green",
+        "hex": "#a6fbb2",
+        "rgb": "RGB(166,251,178)"
+    },
+
+    {
+        "color": "sunflower",
+        "hex": "#ffc512",
+        "rgb": "RGB(255,197,18)"
+    },
+
+    {
+        "color": "velvet",
+        "hex": "#750851",
+        "rgb": "RGB(117,8,81)"
+    },
+
+    {
+        "color": "brick orange",
+        "hex": "#c14a09",
+        "rgb": "RGB(193,74,9)"
+    },
+
+    {
+        "color": "lightish red",
+        "hex": "#fe2f4a",
+        "rgb": "RGB(254,47,74)"
+    },
+
+    {
+        "color": "pure blue",
+        "hex": "#0203e2",
+        "rgb": "RGB(2,3,226)"
+    },
+
+    {
+        "color": "twilight blue",
+        "hex": "#0a437a",
+        "rgb": "RGB(10,67,122)"
+    },
+
+    {
+        "color": "violet red",
+        "hex": "#a50055",
+        "rgb": "RGB(165,0,85)"
+    },
+
+    {
+        "color": "yellowy brown",
+        "hex": "#ae8b0c",
+        "rgb": "RGB(174,139,12)"
+    },
+
+    {
+        "color": "carnation",
+        "hex": "#fd798f",
+        "rgb": "RGB(253,121,143)"
+    },
+
+    {
+        "color": "muddy yellow",
+        "hex": "#bfac05",
+        "rgb": "RGB(191,172,5)"
+    },
+
+    {
+        "color": "dark seafoam green",
+        "hex": "#3eaf76",
+        "rgb": "RGB(62,175,118)"
+    },
+
+    {
+        "color": "deep rose",
+        "hex": "#c74767",
+        "rgb": "RGB(199,71,103)"
+    },
+
+    {
+        "color": "dusty red",
+        "hex": "#b9484e",
+        "rgb": "RGB(185,72,78)"
+    },
+
+    {
+        "color": "grey/blue",
+        "hex": "#647d8e",
+        "rgb": "RGB(100,125,142)"
+    },
+
+    {
+        "color": "lemon lime",
+        "hex": "#bffe28",
+        "rgb": "RGB(191,254,40)"
+    },
+
+    {
+        "color": "purple/pink",
+        "hex": "#d725de",
+        "rgb": "RGB(215,37,222)"
+    },
+
+    {
+        "color": "brown yellow",
+        "hex": "#b29705",
+        "rgb": "RGB(178,151,5)"
+    },
+
+    {
+        "color": "purple brown",
+        "hex": "#673a3f",
+        "rgb": "RGB(103,58,63)"
+    },
+
+    {
+        "color": "wisteria",
+        "hex": "#a87dc2",
+        "rgb": "RGB(168,125,194)"
+    },
+
+    {
+        "color": "banana yellow",
+        "hex": "#fafe4b",
+        "rgb": "RGB(250,254,75)"
+    },
+
+    {
+        "color": "lipstick red",
+        "hex": "#c0022f",
+        "rgb": "RGB(192,2,47)"
+    },
+
+    {
+        "color": "water blue",
+        "hex": "#0e87cc",
+        "rgb": "RGB(14,135,204)"
+    },
+
+    {
+        "color": "brown grey",
+        "hex": "#8d8468",
+        "rgb": "RGB(141,132,104)"
+    },
+
+    {
+        "color": "vibrant purple",
+        "hex": "#ad03de",
+        "rgb": "RGB(173,3,222)"
+    },
+
+    {
+        "color": "baby green",
+        "hex": "#8cff9e",
+        "rgb": "RGB(140,255,158)"
+    },
+
+    {
+        "color": "barf green",
+        "hex": "#94ac02",
+        "rgb": "RGB(148,172,2)"
+    },
+
+    {
+        "color": "eggshell blue",
+        "hex": "#c4fff7",
+        "rgb": "RGB(196,255,247)"
+    },
+
+    {
+        "color": "sandy yellow",
+        "hex": "#fdee73",
+        "rgb": "RGB(253,238,115)"
+    },
+
+    {
+        "color": "cool green",
+        "hex": "#33b864",
+        "rgb": "RGB(51,184,100)"
+    },
+
+    {
+        "color": "pale",
+        "hex": "#fff9d0",
+        "rgb": "RGB(255,249,208)"
+    },
+
+    {
+        "color": "blue/grey",
+        "hex": "#758da3",
+        "rgb": "RGB(117,141,163)"
+    },
+
+    {
+        "color": "hot magenta",
+        "hex": "#f504c9",
+        "rgb": "RGB(245,4,201)"
+    },
+
+    {
+        "color": "greyblue",
+        "hex": "#77a1b5",
+        "rgb": "RGB(119,161,181)"
+    },
+
+    {
+        "color": "purpley",
+        "hex": "#8756e4",
+        "rgb": "RGB(135,86,228)"
+    },
+
+    {
+        "color": "baby shit green",
+        "hex": "#889717",
+        "rgb": "RGB(136,151,23)"
+    },
+
+    {
+        "color": "brownish pink",
+        "hex": "#c27e79",
+        "rgb": "RGB(194,126,121)"
+    },
+
+    {
+        "color": "dark aquamarine",
+        "hex": "#017371",
+        "rgb": "RGB(1,115,113)"
+    },
+
+    {
+        "color": "diarrhea",
+        "hex": "#9f8303",
+        "rgb": "RGB(159,131,3)"
+    },
+
+    {
+        "color": "light mustard",
+        "hex": "#f7d560",
+        "rgb": "RGB(247,213,96)"
+    },
+
+    {
+        "color": "pale sky blue",
+        "hex": "#bdf6fe",
+        "rgb": "RGB(189,246,254)"
+    },
+
+    {
+        "color": "turtle green",
+        "hex": "#75b84f",
+        "rgb": "RGB(117,184,79)"
+    },
+
+    {
+        "color": "bright olive",
+        "hex": "#9cbb04",
+        "rgb": "RGB(156,187,4)"
+    },
+
+    {
+        "color": "dark grey blue",
+        "hex": "#29465b",
+        "rgb": "RGB(41,70,91)"
+    },
+
+    {
+        "color": "greeny brown",
+        "hex": "#696006",
+        "rgb": "RGB(105,96,6)"
+    },
+
+    {
+        "color": "lemon green",
+        "hex": "#adf802",
+        "rgb": "RGB(173,248,2)"
+    },
+
+    {
+        "color": "light periwinkle",
+        "hex": "#c1c6fc",
+        "rgb": "RGB(193,198,252)"
+    },
+
+    {
+        "color": "seaweed green",
+        "hex": "#35ad6b",
+        "rgb": "RGB(53,173,107)"
+    },
+
+    {
+        "color": "sunshine yellow",
+        "hex": "#fffd37",
+        "rgb": "RGB(255,253,55)"
+    },
+
+    {
+        "color": "ugly purple",
+        "hex": "#a442a0",
+        "rgb": "RGB(164,66,160)"
+    },
+
+    {
+        "color": "medium pink",
+        "hex": "#f36196",
+        "rgb": "RGB(243,97,150)"
+    },
+
+    {
+        "color": "puke brown",
+        "hex": "#947706",
+        "rgb": "RGB(148,119,6)"
+    },
+
+    {
+        "color": "very light pink",
+        "hex": "#fff4f2",
+        "rgb": "RGB(255,244,242)"
+    },
+
+    {
+        "color": "viridian",
+        "hex": "#1e9167",
+        "rgb": "RGB(30,145,103)"
+    },
+
+    {
+        "color": "bile",
+        "hex": "#b5c306",
+        "rgb": "RGB(181,195,6)"
+    },
+
+    {
+        "color": "faded yellow",
+        "hex": "#feff7f",
+        "rgb": "RGB(254,255,127)"
+    },
+
+    {
+        "color": "very pale green",
+        "hex": "#cffdbc",
+        "rgb": "RGB(207,253,188)"
+    },
+
+    {
+        "color": "vibrant green",
+        "hex": "#0add08",
+        "rgb": "RGB(10,221,8)"
+    },
+
+    {
+        "color": "bright lime",
+        "hex": "#87fd05",
+        "rgb": "RGB(135,253,5)"
+    },
+
+    {
+        "color": "spearmint",
+        "hex": "#1ef876",
+        "rgb": "RGB(30,248,118)"
+    },
+
+    {
+        "color": "light aquamarine",
+        "hex": "#7bfdc7",
+        "rgb": "RGB(123,253,199)"
+    },
+
+    {
+        "color": "light sage",
+        "hex": "#bcecac",
+        "rgb": "RGB(188,236,172)"
+    },
+
+    {
+        "color": "yellowgreen",
+        "hex": "#bbf90f",
+        "rgb": "RGB(187,249,15)"
+    },
+
+    {
+        "color": "baby poo",
+        "hex": "#ab9004",
+        "rgb": "RGB(171,144,4)"
+    },
+
+    {
+        "color": "dark seafoam",
+        "hex": "#1fb57a",
+        "rgb": "RGB(31,181,122)"
+    },
+
+    {
+        "color": "deep teal",
+        "hex": "#00555a",
+        "rgb": "RGB(0,85,90)"
+    },
+
+    {
+        "color": "heather",
+        "hex": "#a484ac",
+        "rgb": "RGB(164,132,172)"
+    },
+
+    {
+        "color": "rust orange",
+        "hex": "#c45508",
+        "rgb": "RGB(196,85,8)"
+    },
+
+    {
+        "color": "dirty blue",
+        "hex": "#3f829d",
+        "rgb": "RGB(63,130,157)"
+    },
+
+    {
+        "color": "fern green",
+        "hex": "#548d44",
+        "rgb": "RGB(84,141,68)"
+    },
+
+    {
+        "color": "bright lilac",
+        "hex": "#c95efb",
+        "rgb": "RGB(201,94,251)"
+    },
+
+    {
+        "color": "weird green",
+        "hex": "#3ae57f",
+        "rgb": "RGB(58,229,127)"
+    },
+
+    {
+        "color": "peacock blue",
+        "hex": "#016795",
+        "rgb": "RGB(1,103,149)"
+    },
+
+    {
+        "color": "avocado green",
+        "hex": "#87a922",
+        "rgb": "RGB(135,169,34)"
+    },
+
+    {
+        "color": "faded orange",
+        "hex": "#f0944d",
+        "rgb": "RGB(240,148,77)"
+    },
+
+    {
+        "color": "grape purple",
+        "hex": "#5d1451",
+        "rgb": "RGB(93,20,81)"
+    },
+
+    {
+        "color": "hot green",
+        "hex": "#25ff29",
+        "rgb": "RGB(37,255,41)"
+    },
+
+    {
+        "color": "lime yellow",
+        "hex": "#d0fe1d",
+        "rgb": "RGB(208,254,29)"
+    },
+
+    {
+        "color": "mango",
+        "hex": "#ffa62b",
+        "rgb": "RGB(255,166,43)"
+    },
+
+    {
+        "color": "shamrock",
+        "hex": "#01b44c",
+        "rgb": "RGB(1,180,76)"
+    },
+
+    {
+        "color": "bubblegum",
+        "hex": "#ff6cb5",
+        "rgb": "RGB(255,108,181)"
+    },
+
+    {
+        "color": "purplish brown",
+        "hex": "#6b4247",
+        "rgb": "RGB(107,66,71)"
+    },
+
+    {
+        "color": "vomit yellow",
+        "hex": "#c7c10c",
+        "rgb": "RGB(199,193,12)"
+    },
+
+    {
+        "color": "pale cyan",
+        "hex": "#b7fffa",
+        "rgb": "RGB(183,255,250)"
+    },
+
+    {
+        "color": "key lime",
+        "hex": "#aeff6e",
+        "rgb": "RGB(174,255,110)"
+    },
+
+    {
+        "color": "tomato red",
+        "hex": "#ec2d01",
+        "rgb": "RGB(236,45,1)"
+    },
+
+    {
+        "color": "lightgreen",
+        "hex": "#76ff7b",
+        "rgb": "RGB(118,255,123)"
+    },
+
+    {
+        "color": "merlot",
+        "hex": "#730039",
+        "rgb": "RGB(115,0,57)"
+    },
+
+    {
+        "color": "night blue",
+        "hex": "#040348",
+        "rgb": "RGB(4,3,72)"
+    },
+
+    {
+        "color": "purpleish pink",
+        "hex": "#df4ec8",
+        "rgb": "RGB(223,78,200)"
+    },
+
+    {
+        "color": "apple",
+        "hex": "#6ecb3c",
+        "rgb": "RGB(110,203,60)"
+    },
+
+    {
+        "color": "baby poop green",
+        "hex": "#8f9805",
+        "rgb": "RGB(143,152,5)"
+    },
+
+    {
+        "color": "green apple",
+        "hex": "#5edc1f",
+        "rgb": "RGB(94,220,31)"
+    },
+
+    {
+        "color": "heliotrope",
+        "hex": "#d94ff5",
+        "rgb": "RGB(217,79,245)"
+    },
+
+    {
+        "color": "yellow/green",
+        "hex": "#c8fd3d",
+        "rgb": "RGB(200,253,61)"
+    },
+
+    {
+        "color": "almost black",
+        "hex": "#070d0d",
+        "rgb": "RGB(7,13,13)"
+    },
+
+    {
+        "color": "cool blue",
+        "hex": "#4984b8",
+        "rgb": "RGB(73,132,184)"
+    },
+
+    {
+        "color": "leafy green",
+        "hex": "#51b73b",
+        "rgb": "RGB(81,183,59)"
+    },
+
+    {
+        "color": "mustard brown",
+        "hex": "#ac7e04",
+        "rgb": "RGB(172,126,4)"
+    },
+
+    {
+        "color": "dusk",
+        "hex": "#4e5481",
+        "rgb": "RGB(78,84,129)"
+    },
+
+    {
+        "color": "dull brown",
+        "hex": "#876e4b",
+        "rgb": "RGB(135,110,75)"
+    },
+
+    {
+        "color": "frog green",
+        "hex": "#58bc08",
+        "rgb": "RGB(88,188,8)"
+    },
+
+    {
+        "color": "vivid green",
+        "hex": "#2fef10",
+        "rgb": "RGB(47,239,16)"
+    },
+
+    {
+        "color": "bright light green",
+        "hex": "#2dfe54",
+        "rgb": "RGB(45,254,84)"
+    },
+
+    {
+        "color": "fluro green",
+        "hex": "#0aff02",
+        "rgb": "RGB(10,255,2)"
+    },
+
+    {
+        "color": "kiwi",
+        "hex": "#9cef43",
+        "rgb": "RGB(156,239,67)"
+    },
+
+    {
+        "color": "seaweed",
+        "hex": "#18d17b",
+        "rgb": "RGB(24,209,123)"
+    },
+
+    {
+        "color": "navy green",
+        "hex": "#35530a",
+        "rgb": "RGB(53,83,10)"
+    },
+
+    {
+        "color": "ultramarine blue",
+        "hex": "#1805db",
+        "rgb": "RGB(24,5,219)"
+    },
+
+    {
+        "color": "iris",
+        "hex": "#6258c4",
+        "rgb": "RGB(98,88,196)"
+    },
+
+    {
+        "color": "pastel orange",
+        "hex": "#ff964f",
+        "rgb": "RGB(255,150,79)"
+    },
+
+    {
+        "color": "yellowish orange",
+        "hex": "#ffab0f",
+        "rgb": "RGB(255,171,15)"
+    },
+
+    {
+        "color": "perrywinkle",
+        "hex": "#8f8ce7",
+        "rgb": "RGB(143,140,231)"
+    },
+
+    {
+        "color": "tealish",
+        "hex": "#24bca8",
+        "rgb": "RGB(36,188,168)"
+    },
+
+    {
+        "color": "dark plum",
+        "hex": "#3f012c",
+        "rgb": "RGB(63,1,44)"
+    },
+
+    {
+        "color": "pear",
+        "hex": "#cbf85f",
+        "rgb": "RGB(203,248,95)"
+    },
+
+    {
+        "color": "pinkish orange",
+        "hex": "#ff724c",
+        "rgb": "RGB(255,114,76)"
+    },
+
+    {
+        "color": "midnight purple",
+        "hex": "#280137",
+        "rgb": "RGB(40,1,55)"
+    },
+
+    {
+        "color": "light urple",
+        "hex": "#b36ff6",
+        "rgb": "RGB(179,111,246)"
+    },
+
+    {
+        "color": "dark mint",
+        "hex": "#48c072",
+        "rgb": "RGB(72,192,114)"
+    },
+
+    {
+        "color": "greenish tan",
+        "hex": "#bccb7a",
+        "rgb": "RGB(188,203,122)"
+    },
+
+    {
+        "color": "light burgundy",
+        "hex": "#a8415b",
+        "rgb": "RGB(168,65,91)"
+    },
+
+    {
+        "color": "turquoise blue",
+        "hex": "#06b1c4",
+        "rgb": "RGB(6,177,196)"
+    },
+
+    {
+        "color": "ugly pink",
+        "hex": "#cd7584",
+        "rgb": "RGB(205,117,132)"
+    },
+
+    {
+        "color": "sandy",
+        "hex": "#f1da7a",
+        "rgb": "RGB(241,218,122)"
+    },
+
+    {
+        "color": "electric pink",
+        "hex": "#ff0490",
+        "rgb": "RGB(255,4,144)"
+    },
+
+    {
+        "color": "muted purple",
+        "hex": "#805b87",
+        "rgb": "RGB(128,91,135)"
+    },
+
+    {
+        "color": "mid green",
+        "hex": "#50a747",
+        "rgb": "RGB(80,167,71)"
+    },
+
+    {
+        "color": "greyish",
+        "hex": "#a8a495",
+        "rgb": "RGB(168,164,149)"
+    },
+
+    {
+        "color": "neon yellow",
+        "hex": "#cfff04",
+        "rgb": "RGB(207,255,4)"
+    },
+
+    {
+        "color": "banana",
+        "hex": "#ffff7e",
+        "rgb": "RGB(255,255,126)"
+    },
+
+    {
+        "color": "carnation pink",
+        "hex": "#ff7fa7",
+        "rgb": "RGB(255,127,167)"
+    },
+
+    {
+        "color": "tomato",
+        "hex": "#ef4026",
+        "rgb": "RGB(239,64,38)"
+    },
+
+    {
+        "color": "sea",
+        "hex": "#3c9992",
+        "rgb": "RGB(60,153,146)"
+    },
+
+    {
+        "color": "muddy brown",
+        "hex": "#886806",
+        "rgb": "RGB(136,104,6)"
+    },
+
+    {
+        "color": "turquoise green",
+        "hex": "#04f489",
+        "rgb": "RGB(4,244,137)"
+    },
+
+    {
+        "color": "buff",
+        "hex": "#fef69e",
+        "rgb": "RGB(254,246,158)"
+    },
+
+    {
+        "color": "fawn",
+        "hex": "#cfaf7b",
+        "rgb": "RGB(207,175,123)"
+    },
+
+    {
+        "color": "muted blue",
+        "hex": "#3b719f",
+        "rgb": "RGB(59,113,159)"
+    },
+
+    {
+        "color": "pale rose",
+        "hex": "#fdc1c5",
+        "rgb": "RGB(253,193,197)"
+    },
+
+    {
+        "color": "dark mint green",
+        "hex": "#20c073",
+        "rgb": "RGB(32,192,115)"
+    },
+
+    {
+        "color": "amethyst",
+        "hex": "#9b5fc0",
+        "rgb": "RGB(155,95,192)"
+    },
+
+    {
+        "color": "blue/green",
+        "hex": "#0f9b8e",
+        "rgb": "RGB(15,155,142)"
+    },
+
+    {
+        "color": "chestnut",
+        "hex": "#742802",
+        "rgb": "RGB(116,40,2)"
+    },
+
+    {
+        "color": "sick green",
+        "hex": "#9db92c",
+        "rgb": "RGB(157,185,44)"
+    },
+
+    {
+        "color": "pea",
+        "hex": "#a4bf20",
+        "rgb": "RGB(164,191,32)"
+    },
+
+    {
+        "color": "rusty orange",
+        "hex": "#cd5909",
+        "rgb": "RGB(205,89,9)"
+    },
+
+    {
+        "color": "stone",
+        "hex": "#ada587",
+        "rgb": "RGB(173,165,135)"
+    },
+
+    {
+        "color": "rose red",
+        "hex": "#be013c",
+        "rgb": "RGB(190,1,60)"
+    },
+
+    {
+        "color": "pale aqua",
+        "hex": "#b8ffeb",
+        "rgb": "RGB(184,255,235)"
+    },
+
+    {
+        "color": "deep orange",
+        "hex": "#dc4d01",
+        "rgb": "RGB(220,77,1)"
+    },
+
+    {
+        "color": "earth",
+        "hex": "#a2653e",
+        "rgb": "RGB(162,101,62)"
+    },
+
+    {
+        "color": "mossy green",
+        "hex": "#638b27",
+        "rgb": "RGB(99,139,39)"
+    },
+
+    {
+        "color": "grassy green",
+        "hex": "#419c03",
+        "rgb": "RGB(65,156,3)"
+    },
+
+    {
+        "color": "pale lime green",
+        "hex": "#b1ff65",
+        "rgb": "RGB(177,255,101)"
+    },
+
+    {
+        "color": "light grey blue",
+        "hex": "#9dbcd4",
+        "rgb": "RGB(157,188,212)"
+    },
+
+    {
+        "color": "pale grey",
+        "hex": "#fdfdfe",
+        "rgb": "RGB(253,253,254)"
+    },
+
+    {
+        "color": "asparagus",
+        "hex": "#77ab56",
+        "rgb": "RGB(119,171,86)"
+    },
+
+    {
+        "color": "blueberry",
+        "hex": "#464196",
+        "rgb": "RGB(70,65,150)"
+    },
+
+    {
+        "color": "purple red",
+        "hex": "#990147",
+        "rgb": "RGB(153,1,71)"
+    },
+
+    {
+        "color": "pale lime",
+        "hex": "#befd73",
+        "rgb": "RGB(190,253,115)"
+    },
+
+    {
+        "color": "greenish teal",
+        "hex": "#32bf84",
+        "rgb": "RGB(50,191,132)"
+    },
+
+    {
+        "color": "caramel",
+        "hex": "#af6f09",
+        "rgb": "RGB(175,111,9)"
+    },
+
+    {
+        "color": "deep magenta",
+        "hex": "#a0025c",
+        "rgb": "RGB(160,2,92)"
+    },
+
+    {
+        "color": "light peach",
+        "hex": "#ffd8b1",
+        "rgb": "RGB(255,216,177)"
+    },
+
+    {
+        "color": "milk chocolate",
+        "hex": "#7f4e1e",
+        "rgb": "RGB(127,78,30)"
+    },
+
+    {
+        "color": "ocher",
+        "hex": "#bf9b0c",
+        "rgb": "RGB(191,155,12)"
+    },
+
+    {
+        "color": "off green",
+        "hex": "#6ba353",
+        "rgb": "RGB(107,163,83)"
+    },
+
+    {
+        "color": "purply pink",
+        "hex": "#f075e6",
+        "rgb": "RGB(240,117,230)"
+    },
+
+    {
+        "color": "lightblue",
+        "hex": "#7bc8f6",
+        "rgb": "RGB(123,200,246)"
+    },
+
+    {
+        "color": "dusky blue",
+        "hex": "#475f94",
+        "rgb": "RGB(71,95,148)"
+    },
+
+    {
+        "color": "golden",
+        "hex": "#f5bf03",
+        "rgb": "RGB(245,191,3)"
+    },
+
+    {
+        "color": "light beige",
+        "hex": "#fffeb6",
+        "rgb": "RGB(255,254,182)"
+    },
+
+    {
+        "color": "butter yellow",
+        "hex": "#fffd74",
+        "rgb": "RGB(255,253,116)"
+    },
+
+    {
+        "color": "dusky purple",
+        "hex": "#895b7b",
+        "rgb": "RGB(137,91,123)"
+    },
+
+    {
+        "color": "french blue",
+        "hex": "#436bad",
+        "rgb": "RGB(67,107,173)"
+    },
+
+    {
+        "color": "ugly yellow",
+        "hex": "#d0c101",
+        "rgb": "RGB(208,193,1)"
+    },
+
+    {
+        "color": "greeny yellow",
+        "hex": "#c6f808",
+        "rgb": "RGB(198,248,8)"
+    },
+
+    {
+        "color": "orangish red",
+        "hex": "#f43605",
+        "rgb": "RGB(244,54,5)"
+    },
+
+    {
+        "color": "shamrock green",
+        "hex": "#02c14d",
+        "rgb": "RGB(2,193,77)"
+    },
+
+    {
+        "color": "orangish brown",
+        "hex": "#b25f03",
+        "rgb": "RGB(178,95,3)"
+    },
+
+    {
+        "color": "tree green",
+        "hex": "#2a7e19",
+        "rgb": "RGB(42,126,25)"
+    },
+
+    {
+        "color": "deep violet",
+        "hex": "#490648",
+        "rgb": "RGB(73,6,72)"
+    },
+
+    {
+        "color": "gunmetal",
+        "hex": "#536267",
+        "rgb": "RGB(83,98,103)"
+    },
+
+    {
+        "color": "blue/purple",
+        "hex": "#5a06ef",
+        "rgb": "RGB(90,6,239)"
+    },
+
+    {
+        "color": "cherry",
+        "hex": "#cf0234",
+        "rgb": "RGB(207,2,52)"
+    },
+
+    {
+        "color": "sandy brown",
+        "hex": "#c4a661",
+        "rgb": "RGB(196,166,97)"
+    },
+
+    {
+        "color": "warm grey",
+        "hex": "#978a84",
+        "rgb": "RGB(151,138,132)"
+    },
+
+    {
+        "color": "dark indigo",
+        "hex": "#1f0954",
+        "rgb": "RGB(31,9,84)"
+    },
+
+    {
+        "color": "midnight",
+        "hex": "#03012d",
+        "rgb": "RGB(3,1,45)"
+    },
+
+    {
+        "color": "bluey green",
+        "hex": "#2bb179",
+        "rgb": "RGB(43,177,121)"
+    },
+
+    {
+        "color": "grey pink",
+        "hex": "#c3909b",
+        "rgb": "RGB(195,144,155)"
+    },
+
+    {
+        "color": "soft purple",
+        "hex": "#a66fb5",
+        "rgb": "RGB(166,111,181)"
+    },
+
+    {
+        "color": "blood",
+        "hex": "#770001",
+        "rgb": "RGB(119,0,1)"
+    },
+
+    {
+        "color": "brown red",
+        "hex": "#922b05",
+        "rgb": "RGB(146,43,5)"
+    },
+
+    {
+        "color": "medium grey",
+        "hex": "#7d7f7c",
+        "rgb": "RGB(125,127,124)"
+    },
+
+    {
+        "color": "berry",
+        "hex": "#990f4b",
+        "rgb": "RGB(153,15,75)"
+    },
+
+    {
+        "color": "poo",
+        "hex": "#8f7303",
+        "rgb": "RGB(143,115,3)"
+    },
+
+    {
+        "color": "purpley pink",
+        "hex": "#c83cb9",
+        "rgb": "RGB(200,60,185)"
+    },
+
+    {
+        "color": "light salmon",
+        "hex": "#fea993",
+        "rgb": "RGB(254,169,147)"
+    },
+
+    {
+        "color": "snot",
+        "hex": "#acbb0d",
+        "rgb": "RGB(172,187,13)"
+    },
+
+    {
+        "color": "easter purple",
+        "hex": "#c071fe",
+        "rgb": "RGB(192,113,254)"
+    },
+
+    {
+        "color": "light yellow green",
+        "hex": "#ccfd7f",
+        "rgb": "RGB(204,253,127)"
+    },
+
+    {
+        "color": "dark navy blue",
+        "hex": "#00022e",
+        "rgb": "RGB(0,2,46)"
+    },
+
+    {
+        "color": "drab",
+        "hex": "#828344",
+        "rgb": "RGB(130,131,68)"
+    },
+
+    {
+        "color": "light rose",
+        "hex": "#ffc5cb",
+        "rgb": "RGB(255,197,203)"
+    },
+
+    {
+        "color": "rouge",
+        "hex": "#ab1239",
+        "rgb": "RGB(171,18,57)"
+    },
+
+    {
+        "color": "purplish red",
+        "hex": "#b0054b",
+        "rgb": "RGB(176,5,75)"
+    },
+
+    {
+        "color": "slime green",
+        "hex": "#99cc04",
+        "rgb": "RGB(153,204,4)"
+    },
+
+    {
+        "color": "baby poop",
+        "hex": "#937c00",
+        "rgb": "RGB(147,124,0)"
+    },
+
+    {
+        "color": "irish green",
+        "hex": "#019529",
+        "rgb": "RGB(1,149,41)"
+    },
+
+    {
+        "color": "pink/purple",
+        "hex": "#ef1de7",
+        "rgb": "RGB(239,29,231)"
+    },
+
+    {
+        "color": "dark navy",
+        "hex": "#000435",
+        "rgb": "RGB(0,4,53)"
+    },
+
+    {
+        "color": "greeny blue",
+        "hex": "#42b395",
+        "rgb": "RGB(66,179,149)"
+    },
+
+    {
+        "color": "light plum",
+        "hex": "#9d5783",
+        "rgb": "RGB(157,87,131)"
+    },
+
+    {
+        "color": "pinkish grey",
+        "hex": "#c8aca9",
+        "rgb": "RGB(200,172,169)"
+    },
+
+    {
+        "color": "dirty orange",
+        "hex": "#c87606",
+        "rgb": "RGB(200,118,6)"
+    },
+
+    {
+        "color": "rust red",
+        "hex": "#aa2704",
+        "rgb": "RGB(170,39,4)"
+    },
+
+    {
+        "color": "pale lilac",
+        "hex": "#e4cbff",
+        "rgb": "RGB(228,203,255)"
+    },
+
+    {
+        "color": "orangey red",
+        "hex": "#fa4224",
+        "rgb": "RGB(250,66,36)"
+    },
+
+    {
+        "color": "primary blue",
+        "hex": "#0804f9",
+        "rgb": "RGB(8,4,249)"
+    },
+
+    {
+        "color": "kermit green",
+        "hex": "#5cb200",
+        "rgb": "RGB(92,178,0)"
+    },
+
+    {
+        "color": "brownish purple",
+        "hex": "#76424e",
+        "rgb": "RGB(118,66,78)"
+    },
+
+    {
+        "color": "murky green",
+        "hex": "#6c7a0e",
+        "rgb": "RGB(108,122,14)"
+    },
+
+    {
+        "color": "wheat",
+        "hex": "#fbdd7e",
+        "rgb": "RGB(251,221,126)"
+    },
+
+    {
+        "color": "very dark purple",
+        "hex": "#2a0134",
+        "rgb": "RGB(42,1,52)"
+    },
+
+    {
+        "color": "bottle green",
+        "hex": "#044a05",
+        "rgb": "RGB(4,74,5)"
+    },
+
+    {
+        "color": "watermelon",
+        "hex": "#fd4659",
+        "rgb": "RGB(253,70,89)"
+    },
+
+    {
+        "color": "deep sky blue",
+        "hex": "#0d75f8",
+        "rgb": "RGB(13,117,248)"
+    },
+
+    {
+        "color": "fire engine red",
+        "hex": "#fe0002",
+        "rgb": "RGB(254,0,2)"
+    },
+
+    {
+        "color": "yellow ochre",
+        "hex": "#cb9d06",
+        "rgb": "RGB(203,157,6)"
+    },
+
+    {
+        "color": "pumpkin orange",
+        "hex": "#fb7d07",
+        "rgb": "RGB(251,125,7)"
+    },
+
+    {
+        "color": "pale olive",
+        "hex": "#b9cc81",
+        "rgb": "RGB(185,204,129)"
+    },
+
+    {
+        "color": "light lilac",
+        "hex": "#edc8ff",
+        "rgb": "RGB(237,200,255)"
+    },
+
+    {
+        "color": "lightish green",
+        "hex": "#61e160",
+        "rgb": "RGB(97,225,96)"
+    },
+
+    {
+        "color": "carolina blue",
+        "hex": "#8ab8fe",
+        "rgb": "RGB(138,184,254)"
+    },
+
+    {
+        "color": "mulberry",
+        "hex": "#920a4e",
+        "rgb": "RGB(146,10,78)"
+    },
+
+    {
+        "color": "shocking pink",
+        "hex": "#fe02a2",
+        "rgb": "RGB(254,2,162)"
+    },
+
+    {
+        "color": "auburn",
+        "hex": "#9a3001",
+        "rgb": "RGB(154,48,1)"
+    },
+
+    {
+        "color": "bright lime green",
+        "hex": "#65fe08",
+        "rgb": "RGB(101,254,8)"
+    },
+
+    {
+        "color": "celadon",
+        "hex": "#befdb7",
+        "rgb": "RGB(190,253,183)"
+    },
+
+    {
+        "color": "pinkish brown",
+        "hex": "#b17261",
+        "rgb": "RGB(177,114,97)"
+    },
+
+    {
+        "color": "poo brown",
+        "hex": "#885f01",
+        "rgb": "RGB(136,95,1)"
+    },
+
+    {
+        "color": "bright sky blue",
+        "hex": "#02ccfe",
+        "rgb": "RGB(2,204,254)"
+    },
+
+    {
+        "color": "celery",
+        "hex": "#c1fd95",
+        "rgb": "RGB(193,253,149)"
+    },
+
+    {
+        "color": "dirt brown",
+        "hex": "#836539",
+        "rgb": "RGB(131,101,57)"
+    },
+
+    {
+        "color": "strawberry",
+        "hex": "#fb2943",
+        "rgb": "RGB(251,41,67)"
+    },
+
+    {
+        "color": "dark lime",
+        "hex": "#84b701",
+        "rgb": "RGB(132,183,1)"
+    },
+
+    {
+        "color": "copper",
+        "hex": "#b66325",
+        "rgb": "RGB(182,99,37)"
+    },
+
+    {
+        "color": "medium brown",
+        "hex": "#7f5112",
+        "rgb": "RGB(127,81,18)"
+    },
+
+    {
+        "color": "muted green",
+        "hex": "#5fa052",
+        "rgb": "RGB(95,160,82)"
+    },
+
+    {
+        "color": "robin's egg",
+        "hex": "#6dedfd",
+        "rgb": "RGB(109,237,253)"
+    },
+
+    {
+        "color": "bright aqua",
+        "hex": "#0bf9ea",
+        "rgb": "RGB(11,249,234)"
+    },
+
+    {
+        "color": "bright lavender",
+        "hex": "#c760ff",
+        "rgb": "RGB(199,96,255)"
+    },
+
+    {
+        "color": "ivory",
+        "hex": "#ffffcb",
+        "rgb": "RGB(255,255,203)"
+    },
+
+    {
+        "color": "very light purple",
+        "hex": "#f6cefc",
+        "rgb": "RGB(246,206,252)"
+    },
+
+    {
+        "color": "light navy",
+        "hex": "#155084",
+        "rgb": "RGB(21,80,132)"
+    },
+
+    {
+        "color": "pink red",
+        "hex": "#f5054f",
+        "rgb": "RGB(245,5,79)"
+    },
+
+    {
+        "color": "olive brown",
+        "hex": "#645403",
+        "rgb": "RGB(100,84,3)"
+    },
+
+    {
+        "color": "poop brown",
+        "hex": "#7a5901",
+        "rgb": "RGB(122,89,1)"
+    },
+
+    {
+        "color": "mustard green",
+        "hex": "#a8b504",
+        "rgb": "RGB(168,181,4)"
+    },
+
+    {
+        "color": "ocean green",
+        "hex": "#3d9973",
+        "rgb": "RGB(61,153,115)"
+    },
+
+    {
+        "color": "very dark blue",
+        "hex": "#000133",
+        "rgb": "RGB(0,1,51)"
+    },
+
+    {
+        "color": "dusty green",
+        "hex": "#76a973",
+        "rgb": "RGB(118,169,115)"
+    },
+
+    {
+        "color": "light navy blue",
+        "hex": "#2e5a88",
+        "rgb": "RGB(46,90,136)"
+    },
+
+    {
+        "color": "minty green",
+        "hex": "#0bf77d",
+        "rgb": "RGB(11,247,125)"
+    },
+
+    {
+        "color": "adobe",
+        "hex": "#bd6c48",
+        "rgb": "RGB(189,108,72)"
+    },
+
+    {
+        "color": "barney",
+        "hex": "#ac1db8",
+        "rgb": "RGB(172,29,184)"
+    },
+
+    {
+        "color": "jade green",
+        "hex": "#2baf6a",
+        "rgb": "RGB(43,175,106)"
+    },
+
+    {
+        "color": "bright light blue",
+        "hex": "#26f7fd",
+        "rgb": "RGB(38,247,253)"
+    },
+
+    {
+        "color": "light lime",
+        "hex": "#aefd6c",
+        "rgb": "RGB(174,253,108)"
+    },
+
+    {
+        "color": "dark khaki",
+        "hex": "#9b8f55",
+        "rgb": "RGB(155,143,85)"
+    },
+
+    {
+        "color": "orange yellow",
+        "hex": "#ffad01",
+        "rgb": "RGB(255,173,1)"
+    },
+
+    {
+        "color": "ocre",
+        "hex": "#c69c04",
+        "rgb": "RGB(198,156,4)"
+    },
+
+    {
+        "color": "maize",
+        "hex": "#f4d054",
+        "rgb": "RGB(244,208,84)"
+    },
+
+    {
+        "color": "faded pink",
+        "hex": "#de9dac",
+        "rgb": "RGB(222,157,172)"
+    },
+
+    {
+        "color": "british racing green",
+        "hex": "#05480d",
+        "rgb": "RGB(5,72,13)"
+    },
+
+    {
+        "color": "sandstone",
+        "hex": "#c9ae74",
+        "rgb": "RGB(201,174,116)"
+    },
+
+    {
+        "color": "mud brown",
+        "hex": "#60460f",
+        "rgb": "RGB(96,70,15)"
+    },
+
+    {
+        "color": "light sea green",
+        "hex": "#98f6b0",
+        "rgb": "RGB(152,246,176)"
+    },
+
+    {
+        "color": "robin egg blue",
+        "hex": "#8af1fe",
+        "rgb": "RGB(138,241,254)"
+    },
+
+    {
+        "color": "aqua marine",
+        "hex": "#2ee8bb",
+        "rgb": "RGB(46,232,187)"
+    },
+
+    {
+        "color": "dark sea green",
+        "hex": "#11875d",
+        "rgb": "RGB(17,135,93)"
+    },
+
+    {
+        "color": "soft pink",
+        "hex": "#fdb0c0",
+        "rgb": "RGB(253,176,192)"
+    },
+
+    {
+        "color": "orangey brown",
+        "hex": "#b16002",
+        "rgb": "RGB(177,96,2)"
+    },
+
+    {
+        "color": "cherry red",
+        "hex": "#f7022a",
+        "rgb": "RGB(247,2,42)"
+    },
+
+    {
+        "color": "burnt yellow",
+        "hex": "#d5ab09",
+        "rgb": "RGB(213,171,9)"
+    },
+
+    {
+        "color": "brownish grey",
+        "hex": "#86775f",
+        "rgb": "RGB(134,119,95)"
+    },
+
+    {
+        "color": "camel",
+        "hex": "#c69f59",
+        "rgb": "RGB(198,159,89)"
+    },
+
+    {
+        "color": "purplish grey",
+        "hex": "#7a687f",
+        "rgb": "RGB(122,104,127)"
+    },
+
+    {
+        "color": "marine",
+        "hex": "#042e60",
+        "rgb": "RGB(4,46,96)"
+    },
+
+    {
+        "color": "greyish pink",
+        "hex": "#c88d94",
+        "rgb": "RGB(200,141,148)"
+    },
+
+    {
+        "color": "pale turquoise",
+        "hex": "#a5fbd5",
+        "rgb": "RGB(165,251,213)"
+    },
+
+    {
+        "color": "pastel yellow",
+        "hex": "#fffe71",
+        "rgb": "RGB(255,254,113)"
+    },
+
+    {
+        "color": "bluey purple",
+        "hex": "#6241c7",
+        "rgb": "RGB(98,65,199)"
+    },
+
+    {
+        "color": "canary yellow",
+        "hex": "#fffe40",
+        "rgb": "RGB(255,254,64)"
+    },
+
+    {
+        "color": "faded red",
+        "hex": "#d3494e",
+        "rgb": "RGB(211,73,78)"
+    },
+
+    {
+        "color": "sepia",
+        "hex": "#985e2b",
+        "rgb": "RGB(152,94,43)"
+    },
+
+    {
+        "color": "coffee",
+        "hex": "#a6814c",
+        "rgb": "RGB(166,129,76)"
+    },
+
+    {
+        "color": "bright magenta",
+        "hex": "#ff08e8",
+        "rgb": "RGB(255,8,232)"
+    },
+
+    {
+        "color": "mocha",
+        "hex": "#9d7651",
+        "rgb": "RGB(157,118,81)"
+    },
+
+    {
+        "color": "ecru",
+        "hex": "#feffca",
+        "rgb": "RGB(254,255,202)"
+    },
+
+    {
+        "color": "purpleish",
+        "hex": "#98568d",
+        "rgb": "RGB(152,86,141)"
+    },
+
+    {
+        "color": "cranberry",
+        "hex": "#9e003a",
+        "rgb": "RGB(158,0,58)"
+    },
+
+    {
+        "color": "darkish green",
+        "hex": "#287c37",
+        "rgb": "RGB(40,124,55)"
+    },
+
+    {
+        "color": "brown orange",
+        "hex": "#b96902",
+        "rgb": "RGB(185,105,2)"
+    },
+
+    {
+        "color": "dusky rose",
+        "hex": "#ba6873",
+        "rgb": "RGB(186,104,115)"
+    },
+
+    {
+        "color": "melon",
+        "hex": "#ff7855",
+        "rgb": "RGB(255,120,85)"
+    },
+
+    {
+        "color": "sickly green",
+        "hex": "#94b21c",
+        "rgb": "RGB(148,178,28)"
+    },
+
+    {
+        "color": "silver",
+        "hex": "#c5c9c7",
+        "rgb": "RGB(197,201,199)"
+    },
+
+    {
+        "color": "purply blue",
+        "hex": "#661aee",
+        "rgb": "RGB(102,26,238)"
+    },
+
+    {
+        "color": "purpleish blue",
+        "hex": "#6140ef",
+        "rgb": "RGB(97,64,239)"
+    },
+
+    {
+        "color": "hospital green",
+        "hex": "#9be5aa",
+        "rgb": "RGB(155,229,170)"
+    },
+
+    {
+        "color": "shit brown",
+        "hex": "#7b5804",
+        "rgb": "RGB(123,88,4)"
+    },
+
+    {
+        "color": "mid blue",
+        "hex": "#276ab3",
+        "rgb": "RGB(39,106,179)"
+    },
+
+    {
+        "color": "amber",
+        "hex": "#feb308",
+        "rgb": "RGB(254,179,8)"
+    },
+
+    {
+        "color": "easter green",
+        "hex": "#8cfd7e",
+        "rgb": "RGB(140,253,126)"
+    },
+
+    {
+        "color": "soft blue",
+        "hex": "#6488ea",
+        "rgb": "RGB(100,136,234)"
+    },
+
+    {
+        "color": "cerulean blue",
+        "hex": "#056eee",
+        "rgb": "RGB(5,110,238)"
+    },
+
+    {
+        "color": "golden brown",
+        "hex": "#b27a01",
+        "rgb": "RGB(178,122,1)"
+    },
+
+    {
+        "color": "bright turquoise",
+        "hex": "#0ffef9",
+        "rgb": "RGB(15,254,249)"
+    },
+
+    {
+        "color": "red pink",
+        "hex": "#fa2a55",
+        "rgb": "RGB(250,42,85)"
+    },
+
+    {
+        "color": "red purple",
+        "hex": "#820747",
+        "rgb": "RGB(130,7,71)"
+    },
+
+    {
+        "color": "greyish brown",
+        "hex": "#7a6a4f",
+        "rgb": "RGB(122,106,79)"
+    },
+
+    {
+        "color": "vermillion",
+        "hex": "#f4320c",
+        "rgb": "RGB(244,50,12)"
+    },
+
+    {
+        "color": "russet",
+        "hex": "#a13905",
+        "rgb": "RGB(161,57,5)"
+    },
+
+    {
+        "color": "steel grey",
+        "hex": "#6f828a",
+        "rgb": "RGB(111,130,138)"
+    },
+
+    {
+        "color": "lighter purple",
+        "hex": "#a55af4",
+        "rgb": "RGB(165,90,244)"
+    },
+
+    {
+        "color": "bright violet",
+        "hex": "#ad0afd",
+        "rgb": "RGB(173,10,253)"
+    },
+
+    {
+        "color": "prussian blue",
+        "hex": "#004577",
+        "rgb": "RGB(0,69,119)"
+    },
+
+    {
+        "color": "slate green",
+        "hex": "#658d6d",
+        "rgb": "RGB(101,141,109)"
+    },
+
+    {
+        "color": "dirty pink",
+        "hex": "#ca7b80",
+        "rgb": "RGB(202,123,128)"
+    },
+
+    {
+        "color": "dark blue green",
+        "hex": "#005249",
+        "rgb": "RGB(0,82,73)"
+    },
+
+    {
+        "color": "pine",
+        "hex": "#2b5d34",
+        "rgb": "RGB(43,93,52)"
+    },
+
+    {
+        "color": "yellowy green",
+        "hex": "#bff128",
+        "rgb": "RGB(191,241,40)"
+    },
+
+    {
+        "color": "dark gold",
+        "hex": "#b59410",
+        "rgb": "RGB(181,148,16)"
+    },
+
+    {
+        "color": "bluish",
+        "hex": "#2976bb",
+        "rgb": "RGB(41,118,187)"
+    },
+
+    {
+        "color": "darkish blue",
+        "hex": "#014182",
+        "rgb": "RGB(1,65,130)"
+    },
+
+    {
+        "color": "dull red",
+        "hex": "#bb3f3f",
+        "rgb": "RGB(187,63,63)"
+    },
+
+    {
+        "color": "pinky red",
+        "hex": "#fc2647",
+        "rgb": "RGB(252,38,71)"
+    },
+
+    {
+        "color": "bronze",
+        "hex": "#a87900",
+        "rgb": "RGB(168,121,0)"
+    },
+
+    {
+        "color": "pale teal",
+        "hex": "#82cbb2",
+        "rgb": "RGB(130,203,178)"
+    },
+
+    {
+        "color": "military green",
+        "hex": "#667c3e",
+        "rgb": "RGB(102,124,62)"
+    },
+
+    {
+        "color": "barbie pink",
+        "hex": "#fe46a5",
+        "rgb": "RGB(254,70,165)"
+    },
+
+    {
+        "color": "bubblegum pink",
+        "hex": "#fe83cc",
+        "rgb": "RGB(254,131,204)"
+    },
+
+    {
+        "color": "pea soup green",
+        "hex": "#94a617",
+        "rgb": "RGB(148,166,23)"
+    },
+
+    {
+        "color": "dark mustard",
+        "hex": "#a88905",
+        "rgb": "RGB(168,137,5)"
+    },
+
+    {
+        "color": "shit",
+        "hex": "#7f5f00",
+        "rgb": "RGB(127,95,0)"
+    },
+
+    {
+        "color": "medium purple",
+        "hex": "#9e43a2",
+        "rgb": "RGB(158,67,162)"
+    },
+
+    {
+        "color": "very dark green",
+        "hex": "#062e03",
+        "rgb": "RGB(6,46,3)"
+    },
+
+    {
+        "color": "dirt",
+        "hex": "#8a6e45",
+        "rgb": "RGB(138,110,69)"
+    },
+
+    {
+        "color": "dusky pink",
+        "hex": "#cc7a8b",
+        "rgb": "RGB(204,122,139)"
+    },
+
+    {
+        "color": "red violet",
+        "hex": "#9e0168",
+        "rgb": "RGB(158,1,104)"
+    },
+
+    {
+        "color": "lemon yellow",
+        "hex": "#fdff38",
+        "rgb": "RGB(253,255,56)"
+    },
+
+    {
+        "color": "pistachio",
+        "hex": "#c0fa8b",
+        "rgb": "RGB(192,250,139)"
+    },
+
+    {
+        "color": "dull yellow",
+        "hex": "#eedc5b",
+        "rgb": "RGB(238,220,91)"
+    },
+
+    {
+        "color": "dark lime green",
+        "hex": "#7ebd01",
+        "rgb": "RGB(126,189,1)"
+    },
+
+    {
+        "color": "denim blue",
+        "hex": "#3b5b92",
+        "rgb": "RGB(59,91,146)"
+    },
+
+    {
+        "color": "teal blue",
+        "hex": "#01889f",
+        "rgb": "RGB(1,136,159)"
+    },
+
+    {
+        "color": "lightish blue",
+        "hex": "#3d7afd",
+        "rgb": "RGB(61,122,253)"
+    },
+
+    {
+        "color": "purpley blue",
+        "hex": "#5f34e7",
+        "rgb": "RGB(95,52,231)"
+    },
+
+    {
+        "color": "light indigo",
+        "hex": "#6d5acf",
+        "rgb": "RGB(109,90,207)"
+    },
+
+    {
+        "color": "swamp green",
+        "hex": "#748500",
+        "rgb": "RGB(116,133,0)"
+    },
+
+    {
+        "color": "brown green",
+        "hex": "#706c11",
+        "rgb": "RGB(112,108,17)"
+    },
+
+    {
+        "color": "dark maroon",
+        "hex": "#3c0008",
+        "rgb": "RGB(60,0,8)"
+    },
+
+    {
+        "color": "hot purple",
+        "hex": "#cb00f5",
+        "rgb": "RGB(203,0,245)"
+    },
+
+    {
+        "color": "dark forest green",
+        "hex": "#002d04",
+        "rgb": "RGB(0,45,4)"
+    },
+
+    {
+        "color": "faded blue",
+        "hex": "#658cbb",
+        "rgb": "RGB(101,140,187)"
+    },
+
+    {
+        "color": "drab green",
+        "hex": "#749551",
+        "rgb": "RGB(116,149,81)"
+    },
+
+    {
+        "color": "light lime green",
+        "hex": "#b9ff66",
+        "rgb": "RGB(185,255,102)"
+    },
+
+    {
+        "color": "snot green",
+        "hex": "#9dc100",
+        "rgb": "RGB(157,193,0)"
+    },
+
+    {
+        "color": "yellowish",
+        "hex": "#faee66",
+        "rgb": "RGB(250,238,102)"
+    },
+
+    {
+        "color": "light blue green",
+        "hex": "#7efbb3",
+        "rgb": "RGB(126,251,179)"
+    },
+
+    {
+        "color": "bordeaux",
+        "hex": "#7b002c",
+        "rgb": "RGB(123,0,44)"
+    },
+
+    {
+        "color": "light mauve",
+        "hex": "#c292a1",
+        "rgb": "RGB(194,146,161)"
+    },
+
+    {
+        "color": "ocean",
+        "hex": "#017b92",
+        "rgb": "RGB(1,123,146)"
+    },
+
+    {
+        "color": "marigold",
+        "hex": "#fcc006",
+        "rgb": "RGB(252,192,6)"
+    },
+
+    {
+        "color": "muddy green",
+        "hex": "#657432",
+        "rgb": "RGB(101,116,50)"
+    },
+
+    {
+        "color": "dull orange",
+        "hex": "#d8863b",
+        "rgb": "RGB(216,134,59)"
+    },
+
+    {
+        "color": "steel",
+        "hex": "#738595",
+        "rgb": "RGB(115,133,149)"
+    },
+
+    {
+        "color": "electric purple",
+        "hex": "#aa23ff",
+        "rgb": "RGB(170,35,255)"
+    },
+
+    {
+        "color": "fluorescent green",
+        "hex": "#08ff08",
+        "rgb": "RGB(8,255,8)"
+    },
+
+    {
+        "color": "yellowish brown",
+        "hex": "#9b7a01",
+        "rgb": "RGB(155,122,1)"
+    },
+
+    {
+        "color": "blush",
+        "hex": "#f29e8e",
+        "rgb": "RGB(242,158,142)"
+    },
+
+    {
+        "color": "soft green",
+        "hex": "#6fc276",
+        "rgb": "RGB(111,194,118)"
+    },
+
+    {
+        "color": "bright orange",
+        "hex": "#ff5b00",
+        "rgb": "RGB(255,91,0)"
+    },
+
+    {
+        "color": "lemon",
+        "hex": "#fdff52",
+        "rgb": "RGB(253,255,82)"
+    },
+
+    {
+        "color": "purple grey",
+        "hex": "#866f85",
+        "rgb": "RGB(134,111,133)"
+    },
+
+    {
+        "color": "acid green",
+        "hex": "#8ffe09",
+        "rgb": "RGB(143,254,9)"
+    },
+
+    {
+        "color": "pale lavender",
+        "hex": "#eecffe",
+        "rgb": "RGB(238,207,254)"
+    },
+
+    {
+        "color": "violet blue",
+        "hex": "#510ac9",
+        "rgb": "RGB(81,10,201)"
+    },
+
+    {
+        "color": "light forest green",
+        "hex": "#4f9153",
+        "rgb": "RGB(79,145,83)"
+    },
+
+    {
+        "color": "burnt red",
+        "hex": "#9f2305",
+        "rgb": "RGB(159,35,5)"
+    },
+
+    {
+        "color": "khaki green",
+        "hex": "#728639",
+        "rgb": "RGB(114,134,57)"
+    },
+
+    {
+        "color": "cerise",
+        "hex": "#de0c62",
+        "rgb": "RGB(222,12,98)"
+    },
+
+    {
+        "color": "faded purple",
+        "hex": "#916e99",
+        "rgb": "RGB(145,110,153)"
+    },
+
+    {
+        "color": "apricot",
+        "hex": "#ffb16d",
+        "rgb": "RGB(255,177,109)"
+    },
+
+    {
+        "color": "dark olive green",
+        "hex": "#3c4d03",
+        "rgb": "RGB(60,77,3)"
+    },
+
+    {
+        "color": "grey brown",
+        "hex": "#7f7053",
+        "rgb": "RGB(127,112,83)"
+    },
+
+    {
+        "color": "green grey",
+        "hex": "#77926f",
+        "rgb": "RGB(119,146,111)"
+    },
+
+    {
+        "color": "true blue",
+        "hex": "#010fcc",
+        "rgb": "RGB(1,15,204)"
+    },
+
+    {
+        "color": "pale violet",
+        "hex": "#ceaefa",
+        "rgb": "RGB(206,174,250)"
+    },
+
+    {
+        "color": "periwinkle blue",
+        "hex": "#8f99fb",
+        "rgb": "RGB(143,153,251)"
+    },
+
+    {
+        "color": "light sky blue",
+        "hex": "#c6fcff",
+        "rgb": "RGB(198,252,255)"
+    },
+
+    {
+        "color": "blurple",
+        "hex": "#5539cc",
+        "rgb": "RGB(85,57,204)"
+    },
+
+    {
+        "color": "green brown",
+        "hex": "#544e03",
+        "rgb": "RGB(84,78,3)"
+    },
+
+    {
+        "color": "bluegreen",
+        "hex": "#017a79",
+        "rgb": "RGB(1,122,121)"
+    },
+
+    {
+        "color": "bright teal",
+        "hex": "#01f9c6",
+        "rgb": "RGB(1,249,198)"
+    },
+
+    {
+        "color": "brownish yellow",
+        "hex": "#c9b003",
+        "rgb": "RGB(201,176,3)"
+    },
+
+    {
+        "color": "pea soup",
+        "hex": "#929901",
+        "rgb": "RGB(146,153,1)"
+    },
+
+    {
+        "color": "forest",
+        "hex": "#0b5509",
+        "rgb": "RGB(11,85,9)"
+    },
+
+    {
+        "color": "barney purple",
+        "hex": "#a00498",
+        "rgb": "RGB(160,4,152)"
+    },
+
+    {
+        "color": "ultramarine",
+        "hex": "#2000b1",
+        "rgb": "RGB(32,0,177)"
+    },
+
+    {
+        "color": "purplish",
+        "hex": "#94568c",
+        "rgb": "RGB(148,86,140)"
+    },
+
+    {
+        "color": "puke yellow",
+        "hex": "#c2be0e",
+        "rgb": "RGB(194,190,14)"
+    },
+
+    {
+        "color": "bluish grey",
+        "hex": "#748b97",
+        "rgb": "RGB(116,139,151)"
+    },
+
+    {
+        "color": "dark periwinkle",
+        "hex": "#665fd1",
+        "rgb": "RGB(102,95,209)"
+    },
+
+    {
+        "color": "dark lilac",
+        "hex": "#9c6da5",
+        "rgb": "RGB(156,109,165)"
+    },
+
+    {
+        "color": "reddish",
+        "hex": "#c44240",
+        "rgb": "RGB(196,66,64)"
+    },
+
+    {
+        "color": "light maroon",
+        "hex": "#a24857",
+        "rgb": "RGB(162,72,87)"
+    },
+
+    {
+        "color": "dusty purple",
+        "hex": "#825f87",
+        "rgb": "RGB(130,95,135)"
+    },
+
+    {
+        "color": "terra cotta",
+        "hex": "#c9643b",
+        "rgb": "RGB(201,100,59)"
+    },
+
+    {
+        "color": "avocado",
+        "hex": "#90b134",
+        "rgb": "RGB(144,177,52)"
+    },
+
+    {
+        "color": "marine blue",
+        "hex": "#01386a",
+        "rgb": "RGB(1,56,106)"
+    },
+
+    {
+        "color": "teal green",
+        "hex": "#25a36f",
+        "rgb": "RGB(37,163,111)"
+    },
+
+    {
+        "color": "slate grey",
+        "hex": "#59656d",
+        "rgb": "RGB(89,101,109)"
+    },
+
+    {
+        "color": "lighter green",
+        "hex": "#75fd63",
+        "rgb": "RGB(117,253,99)"
+    },
+
+    {
+        "color": "electric green",
+        "hex": "#21fc0d",
+        "rgb": "RGB(33,252,13)"
+    },
+
+    {
+        "color": "dusty blue",
+        "hex": "#5a86ad",
+        "rgb": "RGB(90,134,173)"
+    },
+
+    {
+        "color": "golden yellow",
+        "hex": "#fec615",
+        "rgb": "RGB(254,198,21)"
+    },
+
+    {
+        "color": "bright yellow",
+        "hex": "#fffd01",
+        "rgb": "RGB(255,253,1)"
+    },
+
+    {
+        "color": "light lavender",
+        "hex": "#dfc5fe",
+        "rgb": "RGB(223,197,254)"
+    },
+
+    {
+        "color": "umber",
+        "hex": "#b26400",
+        "rgb": "RGB(178,100,0)"
+    },
+
+    {
+        "color": "poop",
+        "hex": "#7f5e00",
+        "rgb": "RGB(127,94,0)"
+    },
+
+    {
+        "color": "dark peach",
+        "hex": "#de7e5d",
+        "rgb": "RGB(222,126,93)"
+    },
+
+    {
+        "color": "jungle green",
+        "hex": "#048243",
+        "rgb": "RGB(4,130,67)"
+    },
+
+    {
+        "color": "eggshell",
+        "hex": "#ffffd4",
+        "rgb": "RGB(255,255,212)"
+    },
+
+    {
+        "color": "denim",
+        "hex": "#3b638c",
+        "rgb": "RGB(59,99,140)"
+    },
+
+    {
+        "color": "yellow brown",
+        "hex": "#b79400",
+        "rgb": "RGB(183,148,0)"
+    },
+
+    {
+        "color": "dull purple",
+        "hex": "#84597e",
+        "rgb": "RGB(132,89,126)"
+    },
+
+    {
+        "color": "chocolate brown",
+        "hex": "#411900",
+        "rgb": "RGB(65,25,0)"
+    },
+
+    {
+        "color": "wine red",
+        "hex": "#7b0323",
+        "rgb": "RGB(123,3,35)"
+    },
+
+    {
+        "color": "neon blue",
+        "hex": "#04d9ff",
+        "rgb": "RGB(4,217,255)"
+    },
+
+    {
+        "color": "dirty green",
+        "hex": "#667e2c",
+        "rgb": "RGB(102,126,44)"
+    },
+
+    {
+        "color": "light tan",
+        "hex": "#fbeeac",
+        "rgb": "RGB(251,238,172)"
+    },
+
+    {
+        "color": "ice blue",
+        "hex": "#d7fffe",
+        "rgb": "RGB(215,255,254)"
+    },
+
+    {
+        "color": "cadet blue",
+        "hex": "#4e7496",
+        "rgb": "RGB(78,116,150)"
+    },
+
+    {
+        "color": "dark mauve",
+        "hex": "#874c62",
+        "rgb": "RGB(135,76,98)"
+    },
+
+    {
+        "color": "very light blue",
+        "hex": "#d5ffff",
+        "rgb": "RGB(213,255,255)"
+    },
+
+    {
+        "color": "grey purple",
+        "hex": "#826d8c",
+        "rgb": "RGB(130,109,140)"
+    },
+
+    {
+        "color": "pastel pink",
+        "hex": "#ffbacd",
+        "rgb": "RGB(255,186,205)"
+    },
+
+    {
+        "color": "very light green",
+        "hex": "#d1ffbd",
+        "rgb": "RGB(209,255,189)"
+    },
+
+    {
+        "color": "dark sky blue",
+        "hex": "#448ee4",
+        "rgb": "RGB(68,142,228)"
+    },
+
+    {
+        "color": "evergreen",
+        "hex": "#05472a",
+        "rgb": "RGB(5,71,42)"
+    },
+
+    {
+        "color": "dull pink",
+        "hex": "#d5869d",
+        "rgb": "RGB(213,134,157)"
+    },
+
+    {
+        "color": "aubergine",
+        "hex": "#3d0734",
+        "rgb": "RGB(61,7,52)"
+    },
+
+    {
+        "color": "mahogany",
+        "hex": "#4a0100",
+        "rgb": "RGB(74,1,0)"
+    },
+
+    {
+        "color": "reddish orange",
+        "hex": "#f8481c",
+        "rgb": "RGB(248,72,28)"
+    },
+
+    {
+        "color": "deep green",
+        "hex": "#02590f",
+        "rgb": "RGB(2,89,15)"
+    },
+
+    {
+        "color": "vomit green",
+        "hex": "#89a203",
+        "rgb": "RGB(137,162,3)"
+    },
+
+    {
+        "color": "purple pink",
+        "hex": "#e03fd8",
+        "rgb": "RGB(224,63,216)"
+    },
+
+    {
+        "color": "dusty pink",
+        "hex": "#d58a94",
+        "rgb": "RGB(213,138,148)"
+    },
+
+    {
+        "color": "faded green",
+        "hex": "#7bb274",
+        "rgb": "RGB(123,178,116)"
+    },
+
+    {
+        "color": "camo green",
+        "hex": "#526525",
+        "rgb": "RGB(82,101,37)"
+    },
+
+    {
+        "color": "pinky purple",
+        "hex": "#c94cbe",
+        "rgb": "RGB(201,76,190)"
+    },
+
+    {
+        "color": "pink purple",
+        "hex": "#db4bda",
+        "rgb": "RGB(219,75,218)"
+    },
+
+    {
+        "color": "brownish red",
+        "hex": "#9e3623",
+        "rgb": "RGB(158,54,35)"
+    },
+
+    {
+        "color": "dark rose",
+        "hex": "#b5485d",
+        "rgb": "RGB(181,72,93)"
+    },
+
+    {
+        "color": "mud",
+        "hex": "#735c12",
+        "rgb": "RGB(115,92,18)"
+    },
+
+    {
+        "color": "brownish",
+        "hex": "#9c6d57",
+        "rgb": "RGB(156,109,87)"
+    },
+
+    {
+        "color": "emerald green",
+        "hex": "#028f1e",
+        "rgb": "RGB(2,143,30)"
+    },
+
+    {
+        "color": "pale brown",
+        "hex": "#b1916e",
+        "rgb": "RGB(177,145,110)"
+    },
+
+    {
+        "color": "dull blue",
+        "hex": "#49759c",
+        "rgb": "RGB(73,117,156)"
+    },
+
+    {
+        "color": "burnt umber",
+        "hex": "#a0450e",
+        "rgb": "RGB(160,69,14)"
+    },
+
+    {
+        "color": "medium green",
+        "hex": "#39ad48",
+        "rgb": "RGB(57,173,72)"
+    },
+
+    {
+        "color": "clay",
+        "hex": "#b66a50",
+        "rgb": "RGB(182,106,80)"
+    },
+
+    {
+        "color": "light aqua",
+        "hex": "#8cffdb",
+        "rgb": "RGB(140,255,219)"
+    },
+
+    {
+        "color": "light olive green",
+        "hex": "#a4be5c",
+        "rgb": "RGB(164,190,92)"
+    },
+
+    {
+        "color": "brownish orange",
+        "hex": "#cb7723",
+        "rgb": "RGB(203,119,35)"
+    },
+
+    {
+        "color": "dark aqua",
+        "hex": "#05696b",
+        "rgb": "RGB(5,105,107)"
+    },
+
+    {
+        "color": "purplish pink",
+        "hex": "#ce5dae",
+        "rgb": "RGB(206,93,174)"
+    },
+
+    {
+        "color": "dark salmon",
+        "hex": "#c85a53",
+        "rgb": "RGB(200,90,83)"
+    },
+
+    {
+        "color": "greenish grey",
+        "hex": "#96ae8d",
+        "rgb": "RGB(150,174,141)"
+    },
+
+    {
+        "color": "jade",
+        "hex": "#1fa774",
+        "rgb": "RGB(31,167,116)"
+    },
+
+    {
+        "color": "ugly green",
+        "hex": "#7a9703",
+        "rgb": "RGB(122,151,3)"
+    },
+
+    {
+        "color": "dark beige",
+        "hex": "#ac9362",
+        "rgb": "RGB(172,147,98)"
+    },
+
+    {
+        "color": "emerald",
+        "hex": "#01a049",
+        "rgb": "RGB(1,160,73)"
+    },
+
+    {
+        "color": "pale red",
+        "hex": "#d9544d",
+        "rgb": "RGB(217,84,77)"
+    },
+
+    {
+        "color": "light magenta",
+        "hex": "#fa5ff7",
+        "rgb": "RGB(250,95,247)"
+    },
+
+    {
+        "color": "sky",
+        "hex": "#82cafc",
+        "rgb": "RGB(130,202,252)"
+    },
+
+    {
+        "color": "light cyan",
+        "hex": "#acfffc",
+        "rgb": "RGB(172,255,252)"
+    },
+
+    {
+        "color": "yellow orange",
+        "hex": "#fcb001",
+        "rgb": "RGB(252,176,1)"
+    },
+
+    {
+        "color": "reddish purple",
+        "hex": "#910951",
+        "rgb": "RGB(145,9,81)"
+    },
+
+    {
+        "color": "reddish pink",
+        "hex": "#fe2c54",
+        "rgb": "RGB(254,44,84)"
+    },
+
+    {
+        "color": "orchid",
+        "hex": "#c875c4",
+        "rgb": "RGB(200,117,196)"
+    },
+
+    {
+        "color": "dirty yellow",
+        "hex": "#cdc50a",
+        "rgb": "RGB(205,197,10)"
+    },
+
+    {
+        "color": "orange red",
+        "hex": "#fd411e",
+        "rgb": "RGB(253,65,30)"
+    },
+
+    {
+        "color": "deep red",
+        "hex": "#9a0200",
+        "rgb": "RGB(154,2,0)"
+    },
+
+    {
+        "color": "orange brown",
+        "hex": "#be6400",
+        "rgb": "RGB(190,100,0)"
+    },
+
+    {
+        "color": "cobalt blue",
+        "hex": "#030aa7",
+        "rgb": "RGB(3,10,167)"
+    },
+
+    {
+        "color": "neon pink",
+        "hex": "#fe019a",
+        "rgb": "RGB(254,1,154)"
+    },
+
+    {
+        "color": "rose pink",
+        "hex": "#f7879a",
+        "rgb": "RGB(247,135,154)"
+    },
+
+    {
+        "color": "greyish purple",
+        "hex": "#887191",
+        "rgb": "RGB(136,113,145)"
+    },
+
+    {
+        "color": "raspberry",
+        "hex": "#b00149",
+        "rgb": "RGB(176,1,73)"
+    },
+
+    {
+        "color": "aqua green",
+        "hex": "#12e193",
+        "rgb": "RGB(18,225,147)"
+    },
+
+    {
+        "color": "salmon pink",
+        "hex": "#fe7b7c",
+        "rgb": "RGB(254,123,124)"
+    },
+
+    {
+        "color": "tangerine",
+        "hex": "#ff9408",
+        "rgb": "RGB(255,148,8)"
+    },
+
+    {
+        "color": "brownish green",
+        "hex": "#6a6e09",
+        "rgb": "RGB(106,110,9)"
+    },
+
+    {
+        "color": "red brown",
+        "hex": "#8b2e16",
+        "rgb": "RGB(139,46,22)"
+    },
+
+    {
+        "color": "greenish brown",
+        "hex": "#696112",
+        "rgb": "RGB(105,97,18)"
+    },
+
+    {
+        "color": "pumpkin",
+        "hex": "#e17701",
+        "rgb": "RGB(225,119,1)"
+    },
+
+    {
+        "color": "pine green",
+        "hex": "#0a481e",
+        "rgb": "RGB(10,72,30)"
+    },
+
+    {
+        "color": "charcoal",
+        "hex": "#343837",
+        "rgb": "RGB(52,56,55)"
+    },
+
+    {
+        "color": "baby pink",
+        "hex": "#ffb7ce",
+        "rgb": "RGB(255,183,206)"
+    },
+
+    {
+        "color": "cornflower",
+        "hex": "#6a79f7",
+        "rgb": "RGB(106,121,247)"
+    },
+
+    {
+        "color": "blue violet",
+        "hex": "#5d06e9",
+        "rgb": "RGB(93,6,233)"
+    },
+
+    {
+        "color": "chocolate",
+        "hex": "#3d1c02",
+        "rgb": "RGB(61,28,2)"
+    },
+
+    {
+        "color": "greyish green",
+        "hex": "#82a67d",
+        "rgb": "RGB(130,166,125)"
+    },
+
+    {
+        "color": "scarlet",
+        "hex": "#be0119",
+        "rgb": "RGB(190,1,25)"
+    },
+
+    {
+        "color": "green yellow",
+        "hex": "#c9ff27",
+        "rgb": "RGB(201,255,39)"
+    },
+
+    {
+        "color": "dark olive",
+        "hex": "#373e02",
+        "rgb": "RGB(55,62,2)"
+    },
+
+    {
+        "color": "sienna",
+        "hex": "#a9561e",
+        "rgb": "RGB(169,86,30)"
+    },
+
+    {
+        "color": "pastel purple",
+        "hex": "#caa0ff",
+        "rgb": "RGB(202,160,255)"
+    },
+
+    {
+        "color": "terracotta",
+        "hex": "#ca6641",
+        "rgb": "RGB(202,102,65)"
+    },
+
+    {
+        "color": "aqua blue",
+        "hex": "#02d8e9",
+        "rgb": "RGB(2,216,233)"
+    },
+
+    {
+        "color": "sage green",
+        "hex": "#88b378",
+        "rgb": "RGB(136,179,120)"
+    },
+
+    {
+        "color": "blood red",
+        "hex": "#980002",
+        "rgb": "RGB(152,0,2)"
+    },
+
+    {
+        "color": "deep pink",
+        "hex": "#cb0162",
+        "rgb": "RGB(203,1,98)"
+    },
+
+    {
+        "color": "grass",
+        "hex": "#5cac2d",
+        "rgb": "RGB(92,172,45)"
+    },
+
+    {
+        "color": "moss",
+        "hex": "#769958",
+        "rgb": "RGB(118,153,88)"
+    },
+
+    {
+        "color": "pastel blue",
+        "hex": "#a2bffe",
+        "rgb": "RGB(162,191,254)"
+    },
+
+    {
+        "color": "bluish green",
+        "hex": "#10a674",
+        "rgb": "RGB(16,166,116)"
+    },
+
+    {
+        "color": "green blue",
+        "hex": "#06b48b",
+        "rgb": "RGB(6,180,139)"
+    },
+
+    {
+        "color": "dark tan",
+        "hex": "#af884a",
+        "rgb": "RGB(175,136,74)"
+    },
+
+    {
+        "color": "greenish blue",
+        "hex": "#0b8b87",
+        "rgb": "RGB(11,139,135)"
+    },
+
+    {
+        "color": "pale orange",
+        "hex": "#ffa756",
+        "rgb": "RGB(255,167,86)"
+    },
+
+    {
+        "color": "vomit",
+        "hex": "#a2a415",
+        "rgb": "RGB(162,164,21)"
+    },
+
+    {
+        "color": "forrest green",
+        "hex": "#154406",
+        "rgb": "RGB(21,68,6)"
+    },
+
+    {
+        "color": "dark lavender",
+        "hex": "#856798",
+        "rgb": "RGB(133,103,152)"
+    },
+
+    {
+        "color": "dark violet",
+        "hex": "#34013f",
+        "rgb": "RGB(52,1,63)"
+    },
+
+    {
+        "color": "purple blue",
+        "hex": "#632de9",
+        "rgb": "RGB(99,45,233)"
+    },
+
+    {
+        "color": "dark cyan",
+        "hex": "#0a888a",
+        "rgb": "RGB(10,136,138)"
+    },
+
+    {
+        "color": "olive drab",
+        "hex": "#6f7632",
+        "rgb": "RGB(111,118,50)"
+    },
+
+    {
+        "color": "pinkish",
+        "hex": "#d46a7e",
+        "rgb": "RGB(212,106,126)"
+    },
+
+    {
+        "color": "cobalt",
+        "hex": "#1e488f",
+        "rgb": "RGB(30,72,143)"
+    },
+
+    {
+        "color": "neon purple",
+        "hex": "#bc13fe",
+        "rgb": "RGB(188,19,254)"
+    },
+
+    {
+        "color": "light turquoise",
+        "hex": "#7ef4cc",
+        "rgb": "RGB(126,244,204)"
+    },
+
+    {
+        "color": "apple green",
+        "hex": "#76cd26",
+        "rgb": "RGB(118,205,38)"
+    },
+
+    {
+        "color": "dull green",
+        "hex": "#74a662",
+        "rgb": "RGB(116,166,98)"
+    },
+
+    {
+        "color": "wine",
+        "hex": "#80013f",
+        "rgb": "RGB(128,1,63)"
+    },
+
+    {
+        "color": "powder blue",
+        "hex": "#b1d1fc",
+        "rgb": "RGB(177,209,252)"
+    },
+
+    {
+        "color": "off white",
+        "hex": "#ffffe4",
+        "rgb": "RGB(255,255,228)"
+    },
+
+    {
+        "color": "electric blue",
+        "hex": "#0652ff",
+        "rgb": "RGB(6,82,255)"
+    },
+
+    {
+        "color": "dark turquoise",
+        "hex": "#045c5a",
+        "rgb": "RGB(4,92,90)"
+    },
+
+    {
+        "color": "blue purple",
+        "hex": "#5729ce",
+        "rgb": "RGB(87,41,206)"
+    },
+
+    {
+        "color": "azure",
+        "hex": "#069af3",
+        "rgb": "RGB(6,154,243)"
+    },
+
+    {
+        "color": "bright red",
+        "hex": "#ff000d",
+        "rgb": "RGB(255,0,13)"
+    },
+
+    {
+        "color": "pinkish red",
+        "hex": "#f10c45",
+        "rgb": "RGB(241,12,69)"
+    },
+
+    {
+        "color": "cornflower blue",
+        "hex": "#5170d7",
+        "rgb": "RGB(81,112,215)"
+    },
+
+    {
+        "color": "light olive",
+        "hex": "#acbf69",
+        "rgb": "RGB(172,191,105)"
+    },
+
+    {
+        "color": "grape",
+        "hex": "#6c3461",
+        "rgb": "RGB(108,52,97)"
+    },
+
+    {
+        "color": "greyish blue",
+        "hex": "#5e819d",
+        "rgb": "RGB(94,129,157)"
+    },
+
+    {
+        "color": "purplish blue",
+        "hex": "#601ef9",
+        "rgb": "RGB(96,30,249)"
+    },
+
+    {
+        "color": "yellowish green",
+        "hex": "#b0dd16",
+        "rgb": "RGB(176,221,22)"
+    },
+
+    {
+        "color": "greenish yellow",
+        "hex": "#cdfd02",
+        "rgb": "RGB(205,253,2)"
+    },
+
+    {
+        "color": "medium blue",
+        "hex": "#2c6fbb",
+        "rgb": "RGB(44,111,187)"
+    },
+
+    {
+        "color": "dusty rose",
+        "hex": "#c0737a",
+        "rgb": "RGB(192,115,122)"
+    },
+
+    {
+        "color": "misty rose",
+        "hex": "#ffe4e1",
+        "rgb": "RGB(255,228,225)"
+    },
+
+    {
+        "color": "light violet",
+        "hex": "#d6b4fc",
+        "rgb": "RGB(214,180,252)"
+    },
+
+    {
+        "color": "midnight blue",
+        "hex": "#020035",
+        "rgb": "RGB(2,0,53)"
+    },
+
+    {
+        "color": "bluish purple",
+        "hex": "#703be7",
+        "rgb": "RGB(112,59,231)"
+    },
+
+    {
+        "color": "red orange",
+        "hex": "#fd3c06",
+        "rgb": "RGB(253,60,6)"
+    },
+
+    {
+        "color": "dark magenta",
+        "hex": "#960056",
+        "rgb": "RGB(150,0,86)"
+    },
+
+    {
+        "color": "greenish",
+        "hex": "#40a368",
+        "rgb": "RGB(64,163,104)"
+    },
+
+    {
+        "color": "ocean blue",
+        "hex": "#03719c",
+        "rgb": "RGB(3,113,156)"
+    },
+
+    {
+        "color": "coral",
+        "hex": "#fc5a50",
+        "rgb": "RGB(252,90,80)"
+    },
+
+    {
+        "color": "cream",
+        "hex": "#ffffc2",
+        "rgb": "RGB(255,255,194)"
+    },
+
+    {
+        "color": "reddish brown",
+        "hex": "#7f2b0a",
+        "rgb": "RGB(127,43,10)"
+    },
+
+    {
+        "color": "burnt sienna",
+        "hex": "#b04e0f",
+        "rgb": "RGB(176,78,15)"
+    },
+
+    {
+        "color": "brick",
+        "hex": "#a03623",
+        "rgb": "RGB(160,54,35)"
+    },
+
+    {
+        "color": "sage",
+        "hex": "#87ae73",
+        "rgb": "RGB(135,174,115)"
+    },
+
+    {
+        "color": "grey green",
+        "hex": "#789b73",
+        "rgb": "RGB(120,155,115)"
+    },
+
+    {
+        "color": "white",
+        "hex": "#ffffff",
+        "rgb": "RGB(255,255,255)"
+    },
+
+    {
+        "color": "robin's egg blue",
+        "hex": "#98eff9",
+        "rgb": "RGB(152,239,249)"
+    },
+
+    {
+        "color": "moss green",
+        "hex": "#658b38",
+        "rgb": "RGB(101,139,56)"
+    },
+
+    {
+        "color": "steel blue",
+        "hex": "#5a7d9a",
+        "rgb": "RGB(90,125,154)"
+    },
+
+    {
+        "color": "eggplant",
+        "hex": "#380835",
+        "rgb": "RGB(56,8,53)"
+    },
+
+    {
+        "color": "light yellow",
+        "hex": "#fffe7a",
+        "rgb": "RGB(255,254,122)"
+    },
+
+    {
+        "color": "leaf green",
+        "hex": "#5ca904",
+        "rgb": "RGB(92,169,4)"
+    },
+
+    {
+        "color": "light grey",
+        "hex": "#d8dcd6",
+        "rgb": "RGB(216,220,214)"
+    },
+
+    {
+        "color": "puke",
+        "hex": "#a5a502",
+        "rgb": "RGB(165,165,2)"
+    },
+
+    {
+        "color": "pinkish purple",
+        "hex": "#d648d7",
+        "rgb": "RGB(214,72,215)"
+    },
+
+    {
+        "color": "sea blue",
+        "hex": "#047495",
+        "rgb": "RGB(4,116,149)"
+    },
+
+    {
+        "color": "pale purple",
+        "hex": "#b790d4",
+        "rgb": "RGB(183,144,212)"
+    },
+
+    {
+        "color": "slate blue",
+        "hex": "#5b7c99",
+        "rgb": "RGB(91,124,153)"
+    },
+
+    {
+        "color": "blue grey",
+        "hex": "#607c8e",
+        "rgb": "RGB(96,124,142)"
+    },
+
+    {
+        "color": "hunter green",
+        "hex": "#0b4008",
+        "rgb": "RGB(11,64,8)"
+    },
+
+    {
+        "color": "fuchsia",
+        "hex": "#ed0dd9",
+        "rgb": "RGB(237,13,217)"
+    },
+
+    {
+        "color": "crimson",
+        "hex": "#8c000f",
+        "rgb": "RGB(140,0,15)"
+    },
+
+    {
+        "color": "pale yellow",
+        "hex": "#ffff84",
+        "rgb": "RGB(255,255,132)"
+    },
+
+    {
+        "color": "ochre",
+        "hex": "#bf9005",
+        "rgb": "RGB(191,144,5)"
+    },
+
+    {
+        "color": "mustard yellow",
+        "hex": "#d2bd0a",
+        "rgb": "RGB(210,189,10)"
+    },
+
+    {
+        "color": "light red",
+        "hex": "#ff474c",
+        "rgb": "RGB(255,71,76)"
+    },
+
+    {
+        "color": "cerulean",
+        "hex": "#0485d1",
+        "rgb": "RGB(4,133,209)"
+    },
+
+    {
+        "color": "pale pink",
+        "hex": "#ffcfdc",
+        "rgb": "RGB(255,207,220)"
+    },
+
+    {
+        "color": "deep blue",
+        "hex": "#040273",
+        "rgb": "RGB(4,2,115)"
+    },
+
+    {
+        "color": "rust",
+        "hex": "#a83c09",
+        "rgb": "RGB(168,60,9)"
+    },
+
+    {
+        "color": "light teal",
+        "hex": "#90e4c1",
+        "rgb": "RGB(144,228,193)"
+    },
+
+    {
+        "color": "slate",
+        "hex": "#516572",
+        "rgb": "RGB(81,101,114)"
+    },
+
+    {
+        "color": "goldenrod",
+        "hex": "#fac205",
+        "rgb": "RGB(250,194,5)"
+    },
+
+    {
+        "color": "dark yellow",
+        "hex": "#d5b60a",
+        "rgb": "RGB(213,182,10)"
+    },
+
+    {
+        "color": "dark grey",
+        "hex": "#363737",
+        "rgb": "RGB(54,55,55)"
+    },
+
+    {
+        "color": "army green",
+        "hex": "#4b5d16",
+        "rgb": "RGB(75,93,22)"
+    },
+
+    {
+        "color": "grey blue",
+        "hex": "#6b8ba4",
+        "rgb": "RGB(107,139,164)"
+    },
+
+    {
+        "color": "seafoam",
+        "hex": "#80f9ad",
+        "rgb": "RGB(128,249,173)"
+    },
+
+    {
+        "color": "puce",
+        "hex": "#a57e52",
+        "rgb": "RGB(165,126,82)"
+    },
+
+    {
+        "color": "spring green",
+        "hex": "#a9f971",
+        "rgb": "RGB(169,249,113)"
+    },
+
+    {
+        "color": "dark orange",
+        "hex": "#c65102",
+        "rgb": "RGB(198,81,2)"
+    },
+
+    {
+        "color": "sand",
+        "hex": "#e2ca76",
+        "rgb": "RGB(226,202,118)"
+    },
+
+    {
+        "color": "pastel green",
+        "hex": "#b0ff9d",
+        "rgb": "RGB(176,255,157)"
+    },
+
+    {
+        "color": "mint",
+        "hex": "#9ffeb0",
+        "rgb": "RGB(159,254,176)"
+    },
+
+    {
+        "color": "light orange",
+        "hex": "#fdaa48",
+        "rgb": "RGB(253,170,72)"
+    },
+
+    {
+        "color": "bright pink",
+        "hex": "#fe01b1",
+        "rgb": "RGB(254,1,177)"
+    },
+
+    {
+        "color": "chartreuse",
+        "hex": "#c1f80a",
+        "rgb": "RGB(193,248,10)"
+    },
+
+    {
+        "color": "deep purple",
+        "hex": "#36013f",
+        "rgb": "RGB(54,1,63)"
+    },
+
+    {
+        "color": "dark brown",
+        "hex": "#341c02",
+        "rgb": "RGB(52,28,2)"
+    },
+
+    {
+        "color": "taupe",
+        "hex": "#b9a281",
+        "rgb": "RGB(185,162,129)"
+    },
+
+    {
+        "color": "pea green",
+        "hex": "#8eab12",
+        "rgb": "RGB(142,171,18)"
+    },
+
+    {
+        "color": "puke green",
+        "hex": "#9aae07",
+        "rgb": "RGB(154,174,7)"
+    },
+
+    {
+        "color": "kelly green",
+        "hex": "#02ab2e",
+        "rgb": "RGB(2,171,46)"
+    },
+
+    {
+        "color": "seafoam green",
+        "hex": "#7af9ab",
+        "rgb": "RGB(122,249,171)"
+    },
+
+    {
+        "color": "blue green",
+        "hex": "#137e6d",
+        "rgb": "RGB(19,126,109)"
+    },
+
+    {
+        "color": "khaki",
+        "hex": "#aaa662",
+        "rgb": "RGB(170,166,98)"
+    },
+
+    {
+        "color": "burgundy",
+        "hex": "#610023",
+        "rgb": "RGB(97,0,35)"
+    },
+
+    {
+        "color": "dark teal",
+        "hex": "#014d4e",
+        "rgb": "RGB(1,77,78)"
+    },
+
+    {
+        "color": "brick red",
+        "hex": "#8f1402",
+        "rgb": "RGB(143,20,2)"
+    },
+
+    {
+        "color": "royal purple",
+        "hex": "#4b006e",
+        "rgb": "RGB(75,0,110)"
+    },
+
+    {
+        "color": "plum",
+        "hex": "#580f41",
+        "rgb": "RGB(88,15,65)"
+    },
+
+    {
+        "color": "mint green",
+        "hex": "#8fff9f",
+        "rgb": "RGB(143,255,159)"
+    },
+
+    {
+        "color": "gold",
+        "hex": "#dbb40c",
+        "rgb": "RGB(219,180,12)"
+    },
+
+    {
+        "color": "baby blue",
+        "hex": "#a2cffe",
+        "rgb": "RGB(162,207,254)"
+    },
+
+    {
+        "color": "yellow green",
+        "hex": "#c0fb2d",
+        "rgb": "RGB(192,251,45)"
+    },
+
+    {
+        "color": "bright purple",
+        "hex": "#be03fd",
+        "rgb": "RGB(190,3,253)"
+    },
+
+    {
+        "color": "dark red",
+        "hex": "#840000",
+        "rgb": "RGB(132,0,0)"
+    },
+
+    {
+        "color": "pale blue",
+        "hex": "#d0fefe",
+        "rgb": "RGB(208,254,254)"
+    },
+
+    {
+        "color": "grass green",
+        "hex": "#3f9b0b",
+        "rgb": "RGB(63,155,11)"
+    },
+
+    {
+        "color": "navy",
+        "hex": "#01153e",
+        "rgb": "RGB(1,21,62)"
+    },
+
+    {
+        "color": "aquamarine",
+        "hex": "#04d8b2",
+        "rgb": "RGB(4,216,178)"
+    },
+
+    {
+        "color": "burnt orange",
+        "hex": "#c04e01",
+        "rgb": "RGB(192,78,1)"
+    },
+
+    {
+        "color": "neon green",
+        "hex": "#0cff0c",
+        "rgb": "RGB(12,255,12)"
+    },
+
+    {
+        "color": "bright blue",
+        "hex": "#0165fc",
+        "rgb": "RGB(1,101,252)"
+    },
+
+    {
+        "color": "rose",
+        "hex": "#cf6275",
+        "rgb": "RGB(207,98,117)"
+    },
+
+    {
+        "color": "light pink",
+        "hex": "#ffd1df",
+        "rgb": "RGB(255,209,223)"
+    },
+
+    {
+        "color": "mustard",
+        "hex": "#ceb301",
+        "rgb": "RGB(206,179,1)"
+    },
+
+    {
+        "color": "indigo",
+        "hex": "#380282",
+        "rgb": "RGB(56,2,130)"
+    },
+
+    {
+        "color": "lime",
+        "hex": "#aaff32",
+        "rgb": "RGB(170,255,50)"
+    },
+
+    {
+        "color": "sea green",
+        "hex": "#53fca1",
+        "rgb": "RGB(83,252,161)"
+    },
+
+    {
+        "color": "periwinkle",
+        "hex": "#8e82fe",
+        "rgb": "RGB(142,130,254)"
+    },
+
+    {
+        "color": "dark pink",
+        "hex": "#cb416b",
+        "rgb": "RGB(203,65,107)"
+    },
+
+    {
+        "color": "olive green",
+        "hex": "#677a04",
+        "rgb": "RGB(103,122,4)"
+    },
+
+    {
+        "color": "peach",
+        "hex": "#ffb07c",
+        "rgb": "RGB(255,176,124)"
+    },
+
+    {
+        "color": "pale green",
+        "hex": "#c7fdb5",
+        "rgb": "RGB(199,253,181)"
+    },
+
+    {
+        "color": "light brown",
+        "hex": "#ad8150",
+        "rgb": "RGB(173,129,80)"
+    },
+
+    {
+        "color": "hot pink",
+        "hex": "#ff028d",
+        "rgb": "RGB(255,2,141)"
+    },
+
+    {
+        "color": "black",
+        "hex": "#000000",
+        "rgb": "RGB(0,0,0)"
+    },
+
+    {
+        "color": "lilac",
+        "hex": "#cea2fd",
+        "rgb": "RGB(206,162,253)"
+    },
+
+    {
+        "color": "navy blue",
+        "hex": "#001146",
+        "rgb": "RGB(0,17,70)"
+    },
+
+    {
+        "color": "royal blue",
+        "hex": "#0504aa",
+        "rgb": "RGB(5,4,170)"
+    },
+
+    {
+        "color": "beige",
+        "hex": "#e6daa6",
+        "rgb": "RGB(230,218,166)"
+    },
+
+    {
+        "color": "salmon",
+        "hex": "#ff796c",
+        "rgb": "RGB(255,121,108)"
+    },
+
+    {
+        "color": "olive",
+        "hex": "#6e750e",
+        "rgb": "RGB(110,117,14)"
+    },
+
+    {
+        "color": "maroon",
+        "hex": "#650021",
+        "rgb": "RGB(101,0,33)"
+    },
+
+    {
+        "color": "bright green",
+        "hex": "#01ff07",
+        "rgb": "RGB(1,255,7)"
+    },
+
+    {
+        "color": "dark purple",
+        "hex": "#35063e",
+        "rgb": "RGB(53,6,62)"
+    },
+
+    {
+        "color": "mauve",
+        "hex": "#ae7181",
+        "rgb": "RGB(174,113,129)"
+    },
+
+    {
+        "color": "forest green",
+        "hex": "#06470c",
+        "rgb": "RGB(6,71,12)"
+    },
+
+    {
+        "color": "aqua",
+        "hex": "#13eac9",
+        "rgb": "RGB(19,234,201)"
+    },
+
+    {
+        "color": "cyan",
+        "hex": "#00ffff",
+        "rgb": "RGB(0,255,255)"
+    },
+
+    {
+        "color": "tan",
+        "hex": "#d1b26f",
+        "rgb": "RGB(209,178,111)"
+    },
+
+    {
+        "color": "dark blue",
+        "hex": "#00035b",
+        "rgb": "RGB(0,3,91)"
+    },
+
+    {
+        "color": "lavender",
+        "hex": "#c79fef",
+        "rgb": "RGB(199,159,239)"
+    },
+
+    {
+        "color": "turquoise",
+        "hex": "#06c2ac",
+        "rgb": "RGB(6,194,172)"
+    },
+
+    {
+        "color": "dark green",
+        "hex": "#033500",
+        "rgb": "RGB(3,53,0)"
+    },
+
+    {
+        "color": "violet",
+        "hex": "#9a0eea",
+        "rgb": "RGB(154,14,234)"
+    },
+
+    {
+        "color": "light purple",
+        "hex": "#bf77f6",
+        "rgb": "RGB(191,119,246)"
+    },
+
+    {
+        "color": "lime green",
+        "hex": "#89fe05",
+        "rgb": "RGB(137,254,5)"
+    },
+
+    {
+        "color": "grey",
+        "hex": "#929591",
+        "rgb": "RGB(146,149,145)"
+    },
+
+    {
+        "color": "sky blue",
+        "hex": "#75bbfd",
+        "rgb": "RGB(117,187,253)"
+    },
+
+    {
+        "color": "yellow",
+        "hex": "#ffff14",
+        "rgb": "RGB(255,255,20)"
+    },
+
+    {
+        "color": "magenta",
+        "hex": "#c20078",
+        "rgb": "RGB(194,0,120)"
+    },
+
+    {
+        "color": "light green",
+        "hex": "#96f97b",
+        "rgb": "RGB(150,249,123)"
+    },
+
+    {
+        "color": "orange",
+        "hex": "#f97306",
+        "rgb": "RGB(249,115,6)"
+    },
+
+    {
+        "color": "teal",
+        "hex": "#029386",
+        "rgb": "RGB(2,147,134)"
+    },
+
+    {
+        "color": "light blue",
+        "hex": "#95d0fc",
+        "rgb": "RGB(149,208,252)"
+    },
+
+    {
+        "color": "red",
+        "hex": "#e50000",
+        "rgb": "RGB(229,0,0)"
+    },
+
+    {
+        "color": "brown",
+        "hex": "#653700",
+        "rgb": "RGB(101,55,0)"
+    },
+
+    {
+        "color": "pink",
+        "hex": "#ff81c0",
+        "rgb": "RGB(255,129,192)"
+    },
+
+    {
+        "color": "blue",
+        "hex": "#0343df",
+        "rgb": "RGB(3,67,223)"
+    },
+
+    {
+        "color": "green",
+        "hex": "#15b01a",
+        "rgb": "RGB(21,176,26)"
+    },
+
+    {
+        "color": "purple",
+        "hex": "#7e1e9c",
+        "rgb": "RGB(126,30,156)"
+    }
+]

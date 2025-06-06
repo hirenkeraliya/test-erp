@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="./vendor/phpunit/phpunit/phpunit.xsd"
+         bootstrap="vendor/autoload.php"
+         colors="true"
+>
+    <testsuites>
+        <testsuite name="Unit">
+            <directory suffix="Test.php">./tests/Unit</directory>
+        </testsuite>
+        <testsuite name="Feature">
+            <directory suffix="Test.php">./tests/Feature</directory>
+        </testsuite>
+    </testsuites>
+    <php>
+        <env name="APP_ENV" value="testing"/>
+        <env name="BCRYPT_ROUNDS" value="4"/>
+        <env name="CACHE_DRIVER" value="array"/>
+        <env name="DB_CONNECTION" value="testing_mysql"/>
+        <env name="PULSE_DB_CONNECTION" value="testing_mysql"/>
+        <!-- <env name="DB_DATABASE" value=":memory:"/> -->
+        <env name="MAIL_MAILER" value="array"/>
+        <env name="QUEUE_CONNECTION" value="sync"/>
+        <env name="SESSION_DRIVER" value="array"/>
+        <env name="TELESCOPE_ENABLED" value="false"/>
+        <env name="SMS_GATEWAY_URL" value=""/>
+        <env name="SMS_GATEWAY_USERNAME" value=""/>
+        <env name="SMS_GATEWAY_PASSWORD" value=""/>
+        <env name="SMS_GATEWAY_SENDER_ID" value="INFO"/>
+        <env name="CELCOM_SMS_URL" value=""/>
+        <env name="CELCOM_SMS_USERNAME" value=""/>
+        <env name="CELCOM_SMS_PASSWORD" value=""/>
+        <env name="CELCOM_SMS_SENDER_ID" value="INFO"/>
+        <env name="CELCOM_SMS_ENABLED" value="false"/>
+        <env name="DEBUGBAR_ENABLED" value="false"/>
+        <env name="CAPTCHA_DISABLE" value="false"/>
+        <env name="TERMS_AND_CONDITION_PAGE_URL" value=""/>
+        <env name="PDP_NOTICE_URL" value=""/>
+        <env name="POS_ADMIN_URL" value=""/>
+        <env name="POS_ADMIN_COMPANY_ID" value=""/>
+        <env name="POS_ADMIN_CLIENT_ID" value=""/>
+        <env name="POS_ADMIN_CLIENT_SECRET" value=""/>
+        <env name="IOI_CITY_MALL_SALES_FILE_NOTIFICATION_NAME" value=""/>
+        <env name="IOI_CITY_MALL_SALES_FILE_NOTIFICATION_EMAIL" value=""/>
+        <env name="IOI_CITY_MALL_SFTP_IP_ADDRESS" value=""/>
+        <env name="IOI_CITY_MALL_SFTP_PORT" value=""/>
+        <env name="IOI_CITY_MALL_SFTP_USERNAME" value=""/>
+        <env name="IOI_CITY_MALL_SFTP_PASSWORD" value=""/>
+        <env name="IOI_CITY_MALL_SFTP_FILE_UPLOAD_PATH" value=""/>
+        <env name="IOI_CITY_MALL_STORAGE_DISK" value=""/>
+        <env name="IOI_CITY_MALL_FILE_GENERATION_LOG_CHANNEL" value=""/>
+        <env name="IOI_CITY_MALL_FILE_UPLOAD_LOG_CHANNEL" value=""/>
+        <env name="IOI_CITY_MALL_ENABLE_FILE_GENERATION" value="false"/>
+        <env name="IOI_CITY_MALL_ENABLE_FILE_UPLOAD" value="false"/>
+        <env name="PULSE_ENABLED" value=""/>
+        <env name="PULSE_DB_HOST" value=""/>
+        <env name="PULSE_DB_DATABASE" value=""/>
+        <env name="PULSE_DB_USERNAME" value=""/>
+        <env name="PULSE_DB_PASSWORD" value=""/>
+        <env name="TRX_MALL_API_BASE_URI" value=""/>
+        <env name="TRX_MALL_API_GRANT_TYPE" value=""/>
+        <env name="TRX_MALL_API_USERNAME" value=""/>
+        <env name="TRX_MALL_API_PASSWORD" value=""/>
+        <env name="TRX_MALL_DATE_OF_FIRST_SALES_UPLOAD" value=""/>
+        <env name="TRX_MALL_LOG_CHANNEL" value=""/>
+        <env name="TRX_MALL_NOTIFICATION_MAIL_NAME" value=""/>
+        <env name="TRX_MALL_NOTIFICATION_MAIL_EMAIL" value=""/>
+        <env name="RETAIL_PLANNING_SSO_URLS_WHITELIST" value="http://retail-planning.local/sso-login" />
+        <env name="URL_SIGNER_SIGNATURE_KEY" value="random-signature-key" />
+    </php>
+</phpunit>

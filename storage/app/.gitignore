@@ -1,0 +1,4 @@
+*
+!public/
+!barcode_print/
+!.gitignore

@@ -1,0 +1,19 @@
+<?php
+
+declare(strict_types=1);
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+return new class() extends Migration {
+    /**
+     * Run the migrations.
+     */
+    public function up(): void
+    {
+        Schema::table('mystery_gift_usages', function (Blueprint $table): void {
+            $table->foreignId('product_id')->nullable()->after('voucher_id')->constrained();
+        });
+    }
+};
