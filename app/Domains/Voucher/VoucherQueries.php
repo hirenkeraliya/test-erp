@@ -23,6 +23,7 @@ use App\Models\VoucherConfiguration;
 use Carbon\Carbon;
 use Closure;
 use Illuminate\Database\Eloquent\Builder;
+use Illuminate\Database\QueryException;
 use Illuminate\Pagination\LengthAwarePaginator;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Str;
@@ -629,17 +630,74 @@ class VoucherQueries
 
     private function generateUniqueVoucherNumber(): string
     {
-        $randomString = Str::upper(Str::random(5));
-        $timestamp = Carbon::now()->getTimestamp();
-        $voucherNumber = $randomString . $timestamp;
+        $maxAttempts = 10;
+        $attempt = 0;
 
-        $existVoucherNumbers = Voucher::whereCaseSensitive('number', $voucherNumber)->exists();
+        while ($attempt < $maxAttempts) {
+            try {
+                // Generate a more unique voucher number using microseconds and additional randomness
+                $randomString = Str::upper(Str::random(6));
+                $timestamp = Carbon::now()->format('YmdHis');
+                $microseconds = str_pad((string) Carbon::now()->micro, 6, '0', STR_PAD_LEFT);
+                $additionalRandom = mt_rand(1000, 9999);
+                
+                $voucherNumber = $randomString . $timestamp . substr($microseconds, 0, 3) . $additionalRandom;
 
-        if ($existVoucherNumbers) {
-            return $this->generateUniqueVoucherNumber();
+                // Try to create a temporary voucher record to test uniqueness atomically
+                // This will fail if the number already exists due to unique constraint
+                $testVoucher = new Voucher();
+                $testVoucher->number = $voucherNumber;
+                $testVoucher->voucher_configuration_id = 1; // Temporary value
+                $testVoucher->discount_type = 1; // Temporary value
+                $testVoucher->status = VoucherStatusTypes::ACTIVE->value;
+                
+                // This will throw QueryException if number already exists (unique constraint violation)
+                $testVoucher->save();
+                
+                // If we get here, the number is unique, so delete the test record and return the number
+                $testVoucher->delete();
+                
+                return $voucherNumber;
+                
+            } catch (QueryException $e) {
+                // Check if this is a unique constraint violation
+                if ($this->isUniqueConstraintViolation($e)) {
+                    $attempt++;
+                    
+                    // Add exponential backoff with jitter to reduce collision probability
+                    $delay = min(1000000 * (2 ** $attempt) + mt_rand(0, 100000), 5000000); // Max 5 seconds
+                    usleep($delay);
+                    
+                    continue;
+                }
+                
+                // If it's not a unique constraint violation, re-throw the exception
+                throw $e;
+            }
         }
 
-        return $voucherNumber;
+        // If we've exhausted all attempts, fall back to the old method with additional randomness
+        // This should be extremely rare with the improved generation algorithm
+        $fallbackRandom = Str::upper(Str::random(8));
+        $fallbackTimestamp = Carbon::now()->format('YmdHisu');
+        
+        return $fallbackRandom . $fallbackTimestamp . mt_rand(10000, 99999);
+    }
+
+    /**
+     * Check if the given QueryException is due to a unique constraint violation
+     */
+    private function isUniqueConstraintViolation(QueryException $e): bool
+    {
+        $errorCode = $e->getCode();
+        $errorMessage = strtolower($e->getMessage());
+        
+        // Check for common unique constraint violation indicators across different databases
+        return $errorCode === '23000' || // SQLSTATE for integrity constraint violation
+               str_contains($errorMessage, 'duplicate entry') || // MySQL
+               str_contains($errorMessage, 'unique constraint') || // PostgreSQL/SQLite
+               str_contains($errorMessage, 'duplicate key') || // PostgreSQL
+               str_contains($errorMessage, 'violates unique constraint'); // PostgreSQL
     }
 
     public function getSeasonalSalesVoucherColumns(): Closure
