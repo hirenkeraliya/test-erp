@@ -7,6 +7,7 @@ namespace App\Domains\LoyaltyPoint;
 use App\Domains\Member\MemberQueries;
 use App\Models\LoyaltyPoint;
 use Illuminate\Support\Collection;
+use Illuminate\Support\Facades\DB;
 
 class LoyaltyPointQueries
 {
@@ -21,8 +22,21 @@ class LoyaltyPointQueries
 
     public function decreasePoints(LoyaltyPoint $loyaltyPoint, int $points): void
     {
-        $loyaltyPoint->available_points -= $points;
-        $loyaltyPoint->save();
+        // Use atomic database operation to prevent race conditions
+        $affectedRows = DB::table('loyalty_points')
+            ->where('id', $loyaltyPoint->id)
+            ->where('available_points', '>=', $points) // Ensure sufficient points
+            ->update([
+                'available_points' => DB::raw('available_points - ' . $points),
+                'updated_at' => now(),
+            ]);
+
+        if ($affectedRows === 0) {
+            throw new \RuntimeException('Insufficient loyalty points or concurrent modification detected');
+        }
+
+        // Refresh the model to get updated values
+        $loyaltyPoint->refresh();
     }
 
     public function addNew(array $data): LoyaltyPoint
@@ -52,8 +66,17 @@ class LoyaltyPointQueries
 
     public function decreaseLoyaltyPointsToZero(LoyaltyPoint $loyaltyPoint): void
     {
-        $loyaltyPoint->available_points = 0;
-        $loyaltyPoint->save();
+        // Use atomic database operation to prevent race conditions
+        $affectedRows = DB::table('loyalty_points')
+            ->where('id', $loyaltyPoint->id)
+            ->where('available_points', '>', 0) // Only update if there are points to expire
+            ->update([
+                'available_points' => 0,
+                'updated_at' => now(),
+            ]);
+
+        // Refresh the model to get updated values
+        $loyaltyPoint->refresh();
     }
 
     public function getBasicColumnNames(): string

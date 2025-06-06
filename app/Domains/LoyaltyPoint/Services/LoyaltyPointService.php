@@ -12,6 +12,7 @@ use App\Domains\Member\DataObjects\UpdateLoyaltyPointData;
 use App\Domains\Member\MemberQueries;
 use App\Models\Admin;
 use App\Models\Member;
+use Illuminate\Support\Facades\DB;
 
 class LoyaltyPointService
 {
@@ -56,52 +57,103 @@ class LoyaltyPointService
         string $happenedAt,
         string $remarks = '',
     ): void {
-        $loyaltyPointQueries = resolve(LoyaltyPointQueries::class);
-        $loyaltyPointUpdateQueries = resolve(LoyaltyPointUpdateQueries::class);
-        $loyaltyPointsRecords = $loyaltyPointQueries->getByUserSortByExpiryDate($member->id);
+        // Wrap the entire operation in a database transaction to ensure atomicity
+        // and prevent race conditions with expiration jobs
+        DB::transaction(function () use (
+            $member,
+            &$userLoyaltyPoints,
+            &$loyaltyPointsToBeUsed,
+            $typeId,
+            $affectedById,
+            $affectedByType,
+            $happenedAt,
+            $remarks
+        ) {
+            $loyaltyPointQueries = resolve(LoyaltyPointQueries::class);
+            $loyaltyPointUpdateQueries = resolve(LoyaltyPointUpdateQueries::class);
+            
+            // Get loyalty points with row-level locking to prevent concurrent modifications
+            $loyaltyPointsRecords = DB::table('loyalty_points')
+                ->where('member_id', $member->id)
+                ->where('available_points', '>', 0)
+                ->orderBy('expiry_date', 'asc')
+                ->lockForUpdate() // This prevents other transactions from modifying these rows
+                ->get()
+                ->map(function ($record) {
+                    return (object) $record;
+                });
 
-        foreach ($loyaltyPointsRecords as $loyaltyPointRecord) {
-            if ($loyaltyPointsToBeUsed <= 0) {
-                return;
+            foreach ($loyaltyPointsRecords as $loyaltyPointRecord) {
+                if ($loyaltyPointsToBeUsed <= 0) {
+                    return;
+                }
+
+                // Refresh the record to get the latest available_points value
+                $currentRecord = DB::table('loyalty_points')
+                    ->where('id', $loyaltyPointRecord->id)
+                    ->first();
+                
+                if (!$currentRecord || $currentRecord->available_points <= 0) {
+                    // Points may have been expired by another process, skip this record
+                    continue;
+                }
+
+                $availablePoints = $currentRecord->available_points;
+
+                if ($loyaltyPointsToBeUsed > $availablePoints) {
+                    $loyaltyPointsToBeUsed -= $availablePoints;
+                    $userLoyaltyPoints -= $availablePoints;
+
+                    try {
+                        // Use the atomic decreasePoints method
+                        $loyaltyPoint = new \App\Models\LoyaltyPoint();
+                        $loyaltyPoint->id = $loyaltyPointRecord->id;
+                        $loyaltyPointQueries->decreasePoints($loyaltyPoint, $availablePoints);
+
+                        $loyaltyPointUpdateQueries->addNew([
+                            'member_id' => $member->id,
+                            'loyalty_point_id' => $loyaltyPointRecord->id,
+                            'affected_by_id' => $affectedById,
+                            'affected_by_type' => $affectedByType,
+                            'type_id' => $typeId,
+                            'points' => (int) ('-' . $availablePoints),
+                            'closing_loyalty_points_balance' => $userLoyaltyPoints,
+                            'happened_at' => $happenedAt,
+                            'remarks' => $remarks,
+                        ]);
+                    } catch (\RuntimeException $e) {
+                        // Points were modified concurrently, skip this record
+                        continue;
+                    }
+
+                    continue;
+                }
+
+                try {
+                    // Use the atomic decreasePoints method
+                    $loyaltyPoint = new \App\Models\LoyaltyPoint();
+                    $loyaltyPoint->id = $loyaltyPointRecord->id;
+                    $loyaltyPointQueries->decreasePoints($loyaltyPoint, $loyaltyPointsToBeUsed);
+                    
+                    $userLoyaltyPoints -= $loyaltyPointsToBeUsed;
+                    $loyaltyPointUpdateQueries->addNew([
+                        'member_id' => $member->id,
+                        'loyalty_point_id' => $loyaltyPointRecord->id,
+                        'affected_by_id' => $affectedById,
+                        'affected_by_type' => $affectedByType,
+                        'type_id' => $typeId,
+                        'points' => (int) ('-' . $loyaltyPointsToBeUsed),
+                        'closing_loyalty_points_balance' => $userLoyaltyPoints,
+                        'happened_at' => $happenedAt,
+                        'remarks' => $remarks,
+                    ]);
+                    $loyaltyPointsToBeUsed = 0;
+                } catch (\RuntimeException $e) {
+                    // Points were modified concurrently, continue to next record
+                    continue;
+                }
             }
-
-            if ($loyaltyPointsToBeUsed > $loyaltyPointRecord->available_points) {
-                $loyaltyPointsToBeUsed -= $loyaltyPointRecord->available_points;
-                $userLoyaltyPoints -= $loyaltyPointRecord->available_points;
-
-                $decreasePoints = $loyaltyPointRecord->available_points;
-                $loyaltyPointQueries->decreasePoints($loyaltyPointRecord, $loyaltyPointRecord->available_points);
-
-                $loyaltyPointUpdateQueries->addNew([
-                    'member_id' => $member->id,
-                    'loyalty_point_id' => $loyaltyPointRecord->id,
-                    'affected_by_id' => $affectedById,
-                    'affected_by_type' => $affectedByType,
-                    'type_id' => $typeId,
-                    'points' => (int) ('-' . $decreasePoints),
-                    'closing_loyalty_points_balance' => $userLoyaltyPoints,
-                    'happened_at' => $happenedAt,
-                    'remarks' => $remarks,
-                ]);
-
-                continue;
-            }
-
-            $loyaltyPointQueries->decreasePoints($loyaltyPointRecord, $loyaltyPointsToBeUsed);
-            $userLoyaltyPoints -= $loyaltyPointsToBeUsed;
-            $loyaltyPointUpdateQueries->addNew([
-                'member_id' => $member->id,
-                'loyalty_point_id' => $loyaltyPointRecord->id,
-                'affected_by_id' => $affectedById,
-                'affected_by_type' => $affectedByType,
-                'type_id' => $typeId,
-                'points' => (int) ('-' . $loyaltyPointsToBeUsed),
-                'closing_loyalty_points_balance' => $userLoyaltyPoints,
-                'happened_at' => $happenedAt,
-                'remarks' => $remarks,
-            ]);
-            $loyaltyPointsToBeUsed = 0;
-        }
+        });
     }
 
     public function updateLoyaltyPointsForAdmin(
