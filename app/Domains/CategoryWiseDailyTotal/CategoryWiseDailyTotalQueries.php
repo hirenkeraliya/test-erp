@@ -19,11 +19,11 @@ class CategoryWiseDailyTotalQueries
 
     public function update(CategoryWiseDailyTotal $categoryWiseDailyTotal, array $saleItemCountDetail): void
     {
-        $categoryWiseDailyTotal->total_units_sold += $saleItemCountDetail['total_units_sold'];
-        $categoryWiseDailyTotal->total_amount += $saleItemCountDetail['total_amount'];
-        $categoryWiseDailyTotal->total_units_return += $saleItemCountDetail['total_units_return'];
-        $categoryWiseDailyTotal->total_amount_return += $saleItemCountDetail['total_amount_return'];
-        $categoryWiseDailyTotal->save();
+        // Use atomic increment operations to prevent race conditions
+        $categoryWiseDailyTotal->increment('total_units_sold', $saleItemCountDetail['total_units_sold']);
+        $categoryWiseDailyTotal->increment('total_amount', $saleItemCountDetail['total_amount']);
+        $categoryWiseDailyTotal->increment('total_units_return', $saleItemCountDetail['total_units_return']);
+        $categoryWiseDailyTotal->increment('total_amount_return', $saleItemCountDetail['total_amount_return']);
     }
 
     public function getByCounterUpdateIdStoreIdCompanyIdAndDate(

@@ -14,6 +14,7 @@ use App\Models\Location;
 use App\Models\Order;
 use App\Models\StoreDayClose;
 use Illuminate\Support\Collection;
+use Illuminate\Support\Facades\DB;
 
 class StoreDayCloseService
 {
@@ -50,36 +51,50 @@ class StoreDayCloseService
 
         $prepareOrderDetails = $this->prepareOrderDetails($orderDetails);
 
-        $storeDayClose = $storeDayCloseQueries->addNew(
+        return DB::transaction(function () use (
+            $storeDayCloseQueries,
             $location,
             $storeManagerId,
             $counterUpdates,
             $prepareOrderDetails,
             $dateOfFirstCounterOfTheDay,
-        );
-
-        $counterUpdatePayments = $counterUpdates->pluck('payments')->collapse()->groupBy('payment_type_id');
-
-        foreach ($counterUpdatePayments as $paymentTypeId => $payments) {
-            $storeDayClosePaymentQueries->addNew($storeDayClose->getKey(), $paymentTypeId, $payments);
-        }
-
-        $orderPayments = $orderPaymentQueries->getOrderPaymentWithGivenTimeFrame(
-            $location->id,
-            $lastStoreDayClose?->closed_at
-        );
-
-        foreach ($orderPayments as $paymentTypeId => $orderPaymentDetails) {
-            $storeDayClosePaymentQueries->updateOrderPaymentDetails(
-                $storeDayClose->getKey(),
-                $paymentTypeId,
-                $orderPaymentDetails
+            $storeDayClosePaymentQueries,
+            $orderPaymentQueries,
+            $lastStoreDayClose,
+            $orderQueries,
+            $orderDetails
+        ): StoreDayClose {
+            $storeDayClose = $storeDayCloseQueries->addNew(
+                $location,
+                $storeManagerId,
+                $counterUpdates,
+                $prepareOrderDetails,
+                $dateOfFirstCounterOfTheDay,
             );
-        }
 
-        $orderQueries->updateLocationDayCloseId($orderDetails->pluck('id')->toArray(), $storeDayClose->getKey());
+            $counterUpdatePayments = $counterUpdates->pluck('payments')->collapse()->groupBy('payment_type_id');
 
-        return $storeDayClose;
+            foreach ($counterUpdatePayments as $paymentTypeId => $payments) {
+                $storeDayClosePaymentQueries->addNew($storeDayClose->getKey(), $paymentTypeId, $payments);
+            }
+
+            $orderPayments = $orderPaymentQueries->getOrderPaymentWithGivenTimeFrame(
+                $location->id,
+                $lastStoreDayClose?->closed_at
+            );
+
+            foreach ($orderPayments as $paymentTypeId => $orderPaymentDetails) {
+                $storeDayClosePaymentQueries->updateOrderPaymentDetails(
+                    $storeDayClose->getKey(),
+                    $paymentTypeId,
+                    $orderPaymentDetails
+                );
+            }
+
+            $orderQueries->updateLocationDayCloseId($orderDetails->pluck('id')->toArray(), $storeDayClose->getKey());
+
+            return $storeDayClose;
+        });
     }
 
     private function prepareOrderDetails(Collection $orderDetails): array
