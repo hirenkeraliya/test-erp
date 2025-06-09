@@ -8,6 +8,7 @@ use App\Domains\Courier\DataObjects\CourierData;
 use App\Domains\CourierWebhookUrl\CourierWebhookUrlQueries;
 use App\Models\Courier;
 use Illuminate\Pagination\LengthAwarePaginator;
+use Illuminate\Support\Facades\DB;
 
 class CourierQueries
 {
@@ -74,15 +75,17 @@ class CourierQueries
 
     private function updateRelationDetails(CourierData $courierData, Courier $courier): void
     {
-        $courierWebhookUrlQueries = resolve(CourierWebhookUrlQueries::class);
-        $courierWebhookUrlQueries->deleteCourierWebhookUrl($courier);
+        DB::transaction(function () use ($courierData, $courier) {
+            $courierWebhookUrlQueries = resolve(CourierWebhookUrlQueries::class);
+            $courierWebhookUrlQueries->deleteCourierWebhookUrl($courier);
 
-        foreach ($courierData->webhook_urls as $webhookUrl) {
-            $courierWebhookUrlQueries->addNew([
-                'courier_id' => $courier->id,
-                'webhook_url_type_id' => $webhookUrl['webhook_url_type_id'],
-                'url' => $webhookUrl['url'],
-            ]);
-        }
+            foreach ($courierData->webhook_urls as $webhookUrl) {
+                $courierWebhookUrlQueries->addNew([
+                    'courier_id' => $courier->id,
+                    'webhook_url_type_id' => $webhookUrl['webhook_url_type_id'],
+                    'url' => $webhookUrl['url'],
+                ]);
+            }
+        });
     }
 }
