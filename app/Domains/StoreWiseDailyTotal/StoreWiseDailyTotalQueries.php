@@ -22,12 +22,12 @@ class StoreWiseDailyTotalQueries
 
     public function update(StoreWiseDailyTotal $storeWiseDailyTotal, array $storeWiseSale): void
     {
-        $storeWiseDailyTotal->total_sales_count += $storeWiseSale['total_sales_count'];
-        $storeWiseDailyTotal->total_units_sold += $storeWiseSale['total_units_sold'];
-        $storeWiseDailyTotal->total_sales_amount += $storeWiseSale['total_sales_amount'];
-        $storeWiseDailyTotal->total_units_return += $storeWiseSale['total_units_return'];
-        $storeWiseDailyTotal->total_amount_return += $storeWiseSale['total_amount_return'];
-        $storeWiseDailyTotal->save();
+        // Use atomic increment operations to prevent race conditions
+        $storeWiseDailyTotal->increment('total_sales_count', $storeWiseSale['total_sales_count']);
+        $storeWiseDailyTotal->increment('total_units_sold', $storeWiseSale['total_units_sold']);
+        $storeWiseDailyTotal->increment('total_sales_amount', $storeWiseSale['total_sales_amount']);
+        $storeWiseDailyTotal->increment('total_units_return', $storeWiseSale['total_units_return']);
+        $storeWiseDailyTotal->increment('total_amount_return', $storeWiseSale['total_amount_return']);
     }
 
     public function updateReturns(StoreWiseDailyTotal $storeWiseDailyTotal, array $storeWiseSale): void
