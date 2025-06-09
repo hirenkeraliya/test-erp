@@ -44,6 +44,7 @@ use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
 use Illuminate\Pagination\LengthAwarePaginator;
 use Illuminate\Support\Collection;
+use Illuminate\Support\Facades\DB;
 
 class BookingPaymentQueries
 {
@@ -269,21 +270,59 @@ class BookingPaymentQueries
 
     public function markAsRefunded(BookingPayment $bookingPayment, float $refundAmount): void
     {
-        if (
-            CommonFunctions::compareFloatNumbers((float) $bookingPayment->available_amount, $refundAmount)
-        ) {
-            $bookingPayment->status = BookingPaymentStatuses::REFUNDED->value;
+        $currentAvailableAmount = (float) $bookingPayment->available_amount;
+        $newAvailableAmount = $currentAvailableAmount - $refundAmount;
+        
+        // Determine if status should be updated to REFUNDED
+        $shouldMarkAsRefunded = CommonFunctions::compareFloatNumbers($currentAvailableAmount, $refundAmount);
+        $newStatus = $shouldMarkAsRefunded ? BookingPaymentStatuses::REFUNDED->value : $bookingPayment->status;
+        
+        // Perform atomic update with WHERE clause to prevent race conditions
+        $affectedRows = DB::table('booking_payments')
+            ->where('id', $bookingPayment->id)
+            ->where('available_amount', $currentAvailableAmount)
+            ->update([
+                'available_amount' => $newAvailableAmount,
+                'status' => $newStatus,
+                'updated_at' => now(),
+            ]);
+            
+        // If no rows were affected, it means another process modified the record concurrently
+        if ($affectedRows === 0) {
+            throw new \RuntimeException('Booking payment was modified by another process. Please retry the operation.');
         }
-
-        $bookingPayment->available_amount -= $refundAmount;
-        $bookingPayment->save();
+        
+        // Update the model instance to reflect the changes
+        $bookingPayment->available_amount = $newAvailableAmount;
+        $bookingPayment->status = $newStatus;
     }
 
     public function updateAmountColumnsForTopUp(BookingPayment $bookingPayment, float $amount): void
     {
-        $bookingPayment->total_amount += $amount;
-        $bookingPayment->available_amount += $amount;
-        $bookingPayment->save();
+        $currentTotalAmount = (float) $bookingPayment->total_amount;
+        $currentAvailableAmount = (float) $bookingPayment->available_amount;
+        $newTotalAmount = $currentTotalAmount + $amount;
+        $newAvailableAmount = $currentAvailableAmount + $amount;
+        
+        // Perform atomic update with WHERE clause to prevent race conditions
+        $affectedRows = DB::table('booking_payments')
+            ->where('id', $bookingPayment->id)
+            ->where('total_amount', $currentTotalAmount)
+            ->where('available_amount', $currentAvailableAmount)
+            ->update([
+                'total_amount' => $newTotalAmount,
+                'available_amount' => $newAvailableAmount,
+                'updated_at' => now(),
+            ]);
+            
+        // If no rows were affected, it means another process modified the record concurrently
+        if ($affectedRows === 0) {
+            throw new \RuntimeException('Booking payment was modified by another process. Please retry the operation.');
+        }
+        
+        // Update the model instance to reflect the changes
+        $bookingPayment->total_amount = $newTotalAmount;
+        $bookingPayment->available_amount = $newAvailableAmount;
     }
 
     public function getBookingPaymentCountByCounterUpdateId(int $counterUpdateId): int
@@ -342,13 +381,30 @@ class BookingPaymentQueries
 
     public function markAsUsed(BookingPayment $bookingPayment, float $amount): void
     {
-        $bookingPayment->available_amount -= $amount;
-
-        if ($bookingPayment->available_amount <= 0) {
-            $bookingPayment->status = BookingPaymentStatuses::USED->value;
+        $currentAvailableAmount = (float) $bookingPayment->available_amount;
+        $newAvailableAmount = $currentAvailableAmount - $amount;
+        
+        // Determine if status should be updated to USED
+        $newStatus = $newAvailableAmount <= 0 ? BookingPaymentStatuses::USED->value : $bookingPayment->status;
+        
+        // Perform atomic update with WHERE clause to prevent race conditions
+        $affectedRows = DB::table('booking_payments')
+            ->where('id', $bookingPayment->id)
+            ->where('available_amount', $currentAvailableAmount)
+            ->update([
+                'available_amount' => $newAvailableAmount,
+                'status' => $newStatus,
+                'updated_at' => now(),
+            ]);
+            
+        // If no rows were affected, it means another process modified the record concurrently
+        if ($affectedRows === 0) {
+            throw new \RuntimeException('Booking payment was modified by another process. Please retry the operation.');
         }
-
-        $bookingPayment->save();
+        
+        // Update the model instance to reflect the changes
+        $bookingPayment->available_amount = $newAvailableAmount;
+        $bookingPayment->status = $newStatus;
     }
 
     public function loadProductsMemberAndMismatchesRelations(BookingPayment $bookingPayment): BookingPayment
@@ -555,10 +611,29 @@ class BookingPaymentQueries
     public function incrementAvailableAmountAndActivate(int $bookingPaymentId, float $amount): void
     {
         $bookingPayment = BookingPayment::findOrFail($bookingPaymentId);
-
-        $bookingPayment->available_amount += $amount;
-        $bookingPayment->status = BookingPaymentStatuses::ACTIVE->value;
-        $bookingPayment->save();
+        
+        $currentAvailableAmount = (float) $bookingPayment->available_amount;
+        $newAvailableAmount = $currentAvailableAmount + $amount;
+        $newStatus = BookingPaymentStatuses::ACTIVE->value;
+        
+        // Perform atomic update with WHERE clause to prevent race conditions
+        $affectedRows = DB::table('booking_payments')
+            ->where('id', $bookingPaymentId)
+            ->where('available_amount', $currentAvailableAmount)
+            ->update([
+                'available_amount' => $newAvailableAmount,
+                'status' => $newStatus,
+                'updated_at' => now(),
+            ]);
+            
+        // If no rows were affected, it means another process modified the record concurrently
+        if ($affectedRows === 0) {
+            throw new \RuntimeException('Booking payment was modified by another process. Please retry the operation.');
+        }
+        
+        // Update the model instance to reflect the changes
+        $bookingPayment->available_amount = $newAvailableAmount;
+        $bookingPayment->status = $newStatus;
     }
 
     public function getPaginatedBookingPaymentList(array $filterData, int $companyId): LengthAwarePaginator
